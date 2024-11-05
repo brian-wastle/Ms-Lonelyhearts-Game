@@ -1,0 +1,1 @@
+draw_sprite_ext(sprite_index,image_index,x,y - 200 - obj_BeatEmUp_Player.zsp,obj_BeatEmUp_Player.directionOffset,1,0,c_white,1);

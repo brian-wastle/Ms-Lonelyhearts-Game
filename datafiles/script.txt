@@ -1,0 +1,51 @@
+{
+    "runAndGun1": [],
+    "runAndGun2": [],
+    "arcadeRacer": [],
+    "vertShmup": [],
+    "beatEmUp1": [],
+    "beatEmUp2": [],
+    "boxing": [],
+    "twinStickShooter": [],
+    "arcadeShooter": [
+        [
+            {
+                "speaker": "noone",
+                "lines": ["I forgot to make digits!", "Bush did 9/11.", "Jet fuel doesn't melt steel beams."]
+            },
+            {
+                "speaker": "noone",
+                "lines": ["Are you ready?"]
+            },
+            {
+                "speaker": "noone",
+                "lines": ["Hope you're really ready!", "Here we go-"]
+            },
+            {
+                "speaker": "noone",
+                "lines": ["Wait, this is just another test!"]
+            }
+        ],
+        [
+            {
+                "speaker": "noone",
+                "lines": ["This is a test...", "This goes on the second line!"]
+            },
+            {
+                "speaker": "noone",
+                "lines": ["Are you ready?"]
+            },
+            {
+                "speaker": "noone",
+                "lines": ["Here we go-", "Hope you are really ready!"]
+            },
+            {
+                "speaker": "noone",
+                "lines": ["Oh, this is another test!"]
+            }
+        ]
+    ],
+    "horiShmup1": [],
+    "horiShmup2": [],
+    "megaMan": []
+}
