@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_boxing_fighterB_arm",
+  "%Name":"obj_boxing_fighterB_gloveLeft",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_boxing_fighterB_arm",
+  "name":"obj_boxing_fighterB_gloveLeft",
   "overriddenProperties":[],
   "parent":{
     "name":"fighterB",
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_boxing_fighterB_armsC",
-    "path":"sprites/spr_boxing_fighterB_armsC/spr_boxing_fighterB_armsC.yy",
+    "name":"spr_boxing_fighterB_gloves_leftR",
+    "path":"sprites/spr_boxing_fighterB_gloves_leftR/spr_boxing_fighterB_gloves_leftR.yy",
   },
   "spriteMaskId":null,
   "visible":true,

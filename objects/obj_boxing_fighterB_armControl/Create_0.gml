@@ -24,25 +24,54 @@ currentLeftPath = pathData.idle[2];
 
 //create right arm
 path_start(currentRightPath, 0, 0, 0);
-for (var i = 0; i < 6; ++i) {
+for (var i = 0; i < 5; ++i) {
 	xOnPath = path_get_x(path_index, pathPositionsArray[i]);
 	yOnPath = path_get_y(path_index, pathPositionsArray[i]);
 	armDataRight[i] = instance_create_layer(
 		x + armOffset[0] + xOnPath, 
 		y - armOffset[1] + yOnPath, 
 		"Arms", 
-		obj_boxing_fighterB_arm
+		obj_boxing_fighterB_nodes, {
+			node: "arm"
+		}
 	);
 }
-path_start(currentLeftPath, 0, 0, 0);
+
+//create right glove
+xOnPath = path_get_x(path_index, pathPositionsArray[5]);
+yOnPath = path_get_y(path_index, pathPositionsArray[5]);
+armDataRight[5] = instance_create_layer(
+	x + armOffset[0] + xOnPath, 
+	y - armOffset[1] + yOnPath, 
+	"Arms", 
+	obj_boxing_fighterB_nodes, {
+		node: "gloveRight"
+	}
+);
+
 //create left arm
-for (var i = 0; i < 6; ++i) {
+path_start(currentLeftPath, 0, 0, 0);
+for (var i = 0; i < 5; ++i) {
 	xOnPath = path_get_x(path_index, pathPositionsArray[i]);
 	yOnPath = path_get_y(path_index, pathPositionsArray[i]);
 	armDataLeft[i] = instance_create_layer(
 		x - armOffset[0] - xOnPath, 
 		y - armOffset[1] + yOnPath, 
 		"Arms", 
-		obj_boxing_fighterB_arm
+		obj_boxing_fighterB_nodes, {
+			node: "arm"
+		}
 	);
 }
+
+//create left glove
+xOnPath = path_get_x(path_index, pathPositionsArray[5]);
+yOnPath = path_get_y(path_index, pathPositionsArray[5]);
+armDataLeft[5] = instance_create_layer(
+	x - armOffset[0] - xOnPath, 
+	y - armOffset[1] + yOnPath, 
+	"Arms", 
+	obj_boxing_fighterB_nodes, {
+		node: "gloveLeft"
+	}
+);

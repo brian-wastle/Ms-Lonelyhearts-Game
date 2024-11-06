@@ -3,22 +3,22 @@ var turn = turnOffset * enemyOffset;
 x = obj_boxing_fighterB.x - turn;
 y = obj_boxing_fighterB.y;
 
-if (punchState = 0) {
 //idle arm state
-		switch (enemyOffset) {
-		    case 1:
-		        currentRightPath = pathData.idle[3];
-				currentLeftPath = pathData.idle[3];
-		        break;
-			case -1:
-		        currentRightPath = pathData.idle[0];
-				currentLeftPath = pathData.idle[0];
-		        break;
-		    default:
-		        currentRightPath = pathData.idle[1];
-				currentLeftPath = pathData.idle[2];
-		        break;
-		}
+if (punchState = 0) {
+	switch (enemyOffset) {
+		case 1:
+		    currentRightPath = pathData.idle[3];
+			currentLeftPath = pathData.idle[3];
+		    break;
+		case -1:
+		    currentRightPath = pathData.idle[0];
+			currentLeftPath = pathData.idle[0];
+		    break;
+		default:
+		    currentRightPath = pathData.idle[1];
+			currentLeftPath = pathData.idle[2];
+		    break;
+	}
 	
 	path_start(currentRightPath, 0, 0, 0);
 	//right arm position
