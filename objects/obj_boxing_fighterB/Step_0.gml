@@ -1,4 +1,3 @@
-
 var enemyX = obj_boxing_fighterA.x;
 xOffset = abs(enemyX - x) > 150 ? sign(enemyX - x) : 0;
 sprite_index = spriteArray[xOffset + 1];
@@ -6,7 +5,6 @@ sprite_index = spriteArray[xOffset + 1];
 if (!gamepad_is_connected(global.pad)) {
     keyLeft = keyboard_check(ord("A"));
     keyRight = keyboard_check(ord("D"));
-	keySpace = keyboard_check_pressed(vk_space);
 
     var accel = 0.4;
     var decel = 0.3;

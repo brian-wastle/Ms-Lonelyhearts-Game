@@ -8,7 +8,7 @@ childNode = (node == "arm") ?
 		y,
 		"Arms",
 		obj_boxing_fighterB_arm, {
-			parentId: id
+			parentId: id,
 		}
 	) : ((node == "gloveRight") ? instance_create_layer(
 		x,

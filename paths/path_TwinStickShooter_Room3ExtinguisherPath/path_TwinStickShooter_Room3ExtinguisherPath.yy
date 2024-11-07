@@ -5,8 +5,8 @@
   "kind":1,
   "name":"path_TwinStickShooter_Room3ExtinguisherPath",
   "parent":{
-    "name":"Paths",
-    "path":"folders/Paths.yy",
+    "name":"TwinStickShooter",
+    "path":"folders/Paths/TwinStickShooter.yy",
   },
   "points":[
     {"speed":100.0,"x":312.36844,"y":689.7543,},

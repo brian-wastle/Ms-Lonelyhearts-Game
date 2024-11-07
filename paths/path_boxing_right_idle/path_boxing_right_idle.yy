@@ -5,8 +5,8 @@
   "kind":0,
   "name":"path_boxing_right_idle",
   "parent":{
-    "name":"Paths",
-    "path":"folders/Paths.yy",
+    "name":"Idle",
+    "path":"folders/Paths/Boxing/Idle.yy",
   },
   "points":[
     {"speed":100.0,"x":0.0,"y":0.0,},

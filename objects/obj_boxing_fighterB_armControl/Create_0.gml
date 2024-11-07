@@ -1,17 +1,65 @@
+//inputs
+keySpace = 0;
+keyShift = 0;
+//vars
+punchState = 0;
+subState = 0;
+stateTimer = 0;
+
 armOffset = [240, 80];
 turnOffset = -10; 
 enemyOffset = 0; // direction player is facing
-punchState = 0;
+
 pathData = {
 	idle: [
-		path_boxing_right_idle, 
-		path_boxing_center_idle, 
-		path_boxing_center_idle1, 
+		path_boxing_right_idle,
+		path_boxing_center_idle,
+		path_boxing_center_idle1,
 		path_boxing_left_idle
 	],
-	jab: [path_boxing_right_idle]
+	jabRight: [
+		path_boxing_left_jabL0R,
+		path_boxing_left_jabR0R,
+		path_boxing_left_jabL1R,
+		path_boxing_left_jabR1R,
+		path_boxing_left_idle,
+		path_boxing_left_idle,
+		path_boxing_right_jabL0R,
+		path_boxing_right_jabR0R,
+		path_boxing_right_jabL1R,
+		path_boxing_right_jabR1R,
+		path_boxing_right_idle,
+		path_boxing_right_idle,
+		path_boxing_center_jabL0R,
+		path_boxing_center_jabR0R,
+		path_boxing_center_jabL1R,
+		path_boxing_center_jabR1R,
+		path_boxing_center_idle,
+		path_boxing_center_idle
+	],
+	jabLeft: [
+		path_boxing_left_jabL0L,
+		path_boxing_left_jabR0L,
+		path_boxing_left_jabL1L,
+		path_boxing_left_jabR1L,
+		path_boxing_left_idle,
+		path_boxing_left_idle,
+		path_boxing_right_jabL0L,
+		path_boxing_right_jabR0L,
+		path_boxing_right_jabL1L,
+		path_boxing_right_jabR1L,
+		path_boxing_right_idle,
+		path_boxing_right_idle,
+		path_boxing_center_jabL0L,
+		path_boxing_center_jabR0L,
+		path_boxing_center_jabL1L,
+		path_boxing_center_jabR1L,
+		path_boxing_center_idle,
+		path_boxing_center_idle
+	]
 }
 
+jabTimerArray = [5,20,10];
 
 pathPositionsArray = [0,.2,.4,.6,.8,1]; // positions of arm nodes
 armDataRight = array_create(6); // instance ids for right arm
