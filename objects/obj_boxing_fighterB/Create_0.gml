@@ -2,6 +2,7 @@
 playerState = 0;
 armControlInst = instance_create_layer(x,y,"Instances", obj_boxing_fighterB_armControl);
 spriteArray = [spr_boxing_fighterB_bgL, spr_boxing_fighterB_bgC, spr_boxing_fighterB_bgR];
+
 maxSpeed = 7;
 maxScrollRate = 12;
 keyLeft = 0;

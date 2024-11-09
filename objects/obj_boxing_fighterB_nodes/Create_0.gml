@@ -1,6 +1,7 @@
 currentSpeed = 0;
 targetSpeed = 0;
 accel = 1.4;
+childSpeed = 0;
 
 childNode = (node == "arm") ? 
 	instance_create_layer(

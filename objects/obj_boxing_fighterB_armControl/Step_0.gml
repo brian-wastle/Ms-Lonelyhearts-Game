@@ -1,19 +1,30 @@
 keySpace = keyboard_check_pressed(vk_space);
-keyShift = keyboard_check_pressed(vk_space);
+keyShift = keyboard_check_pressed(vk_lshift);
 enemyOffset = abs(obj_boxing_fighterB.x - obj_boxing_fighterA.x) > 150 ? 
 	sign(obj_boxing_fighterB.x - obj_boxing_fighterA.x) : 0;
 var turn = turnOffset * enemyOffset;
 x = obj_boxing_fighterB.x - turn;
 y = obj_boxing_fighterB.y;
 
-
 //trigger punch states
-if (keySpace && punchState < 1) {
-    punchState = 1;
+if (punchState = 0 && stateQueue != 0) {
+	queueState = "closed";
+    punchState = stateQueue;
+	stateQueue = 0;
+}
+
+if (queueState = "open") {
+    if (keySpace) {
+	    stateQueue = 1;
+	}
+	if (keyShift) {
+	    stateQueue = 2;
+	}
 }
 
 //idle punch state
 if (punchState == 0) {
+	childSpeed = subStateData.idleSpeedArray[0];
 	switch (enemyOffset) {
 		case 1:
 		    currentRightPath = pathData.idle[3];
@@ -79,26 +90,19 @@ if (punchState == 1 || punchState == 2) {
 		subState += 1;
 		stateTimer -= 1;
 	} else {
-		if (subState <= 2) {
-			stateTimer = jabTimerArray[subState];
+		if (subState < 2) {
+			stateTimer = subStateData.jabTimerArray[subState];
+			childSpeed = subStateData.jabSpeedArray[subState];
+		} else if (subState = 2) {
+			stateTimer = subStateData.jabTimerArray[subState];
+			childSpeed = subStateData.jabSpeedArray[subState];
+			queueState = "open";
 		} else {
 			subState = 0;
 			punchState = 0;
 		}
 	}
 }
-	//control substates with timers
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 
 //Initiate active arm paths
 path_start(currentRightPath, 0, 0, 0);
@@ -106,6 +110,7 @@ path_start(currentRightPath, 0, 0, 0);
 for (var i = 0; i < 6; ++i) {
 	xOnPath = path_get_x(currentRightPath, pathPositionsArray[i]);
 	yOnPath = path_get_y(currentRightPath, pathPositionsArray[i]);
+	armDataRight[i].childSpeed = childSpeed;
 	armDataRight[i].x = x + armOffset[0] + xOnPath;
 	armDataRight[i].y = y - armOffset[1] + yOnPath;
 }
@@ -114,6 +119,7 @@ path_start(currentLeftPath, 0, 0, 0);
 for (var i = 0; i < 6; ++i) {
 	xOnPath = path_get_x(currentLeftPath, pathPositionsArray[i]);
 	yOnPath = path_get_y(currentLeftPath, pathPositionsArray[i]);
+	armDataLeft[i].childSpeed = childSpeed;
 	armDataLeft[i].x = x - armOffset[0] + xOnPath;
 	armDataLeft[i].y = y - armOffset[1] + yOnPath;
 }

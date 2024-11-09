@@ -8,3 +8,6 @@ xOffset = 0;
 parentSpeed = 0;
 tempRate = .005;
 previousSpeed = 0;
+enemyOffset = 0;
+
+objectSpeed = 22.5;

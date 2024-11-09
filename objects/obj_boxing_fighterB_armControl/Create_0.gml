@@ -6,6 +6,9 @@ punchState = 0;
 subState = 0;
 stateTimer = 0;
 
+stateQueue = 0;
+queueState = "open";
+
 armOffset = [240, 80];
 turnOffset = -10; 
 enemyOffset = 0; // direction player is facing
@@ -58,8 +61,13 @@ pathData = {
 		path_boxing_center_idle
 	]
 }
-
-jabTimerArray = [5,20,10];
+subStateData = {
+	idleTimerArray: [5],
+	idleSpeedArray: [20],
+	
+	jabTimerArray: [5,10,10],
+	jabSpeedArray: [22.5,50,18],
+}
 
 pathPositionsArray = [0,.2,.4,.6,.8,1]; // positions of arm nodes
 armDataRight = array_create(6); // instance ids for right arm
@@ -69,6 +77,8 @@ yOnPath = 0; //calculate path positions
 
 currentRightPath = pathData.idle[1];
 currentLeftPath = pathData.idle[2];
+childSpeed = 0;
+
 
 //create right arm
 path_start(currentRightPath, 0, 0, 0);
