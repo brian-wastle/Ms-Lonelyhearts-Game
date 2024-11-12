@@ -1,5 +1,5 @@
-keySpace = keyboard_check_pressed(vk_space);
-keyShift = keyboard_check_pressed(vk_lshift);
+keyLeft = keyboard_check_pressed(vk_left);
+keyRight = keyboard_check_pressed(vk_right);
 enemyOffset = abs(obj_boxing_fighterB.x - obj_boxing_fighterA.x) > 150 ? 
 	sign(obj_boxing_fighterB.x - obj_boxing_fighterA.x) : 0;
 var turn = turnOffset * enemyOffset;
@@ -7,17 +7,17 @@ x = obj_boxing_fighterB.x - turn;
 y = obj_boxing_fighterB.y;
 
 //trigger punch states
-if (punchState = 0 && stateQueue != 0) {
+if ((punchState = 0 && stateOverride = 0) && stateQueue != 0) {
 	queueState = "closed";
     punchState = stateQueue;
 	stateQueue = 0;
 }
 
 if (queueState = "open") {
-    if (keySpace) {
+    if (keyRight) {
 	    stateQueue = 1;
 	}
-	if (keyShift) {
+	if (keyLeft) {
 	    stateQueue = 2;
 	}
 }
@@ -61,6 +61,7 @@ if (punchState == 1) {
 		}
 	}
 }
+
 // left jab state
 if (punchState == 2) {	
 	//set arm paths
@@ -82,10 +83,9 @@ if (punchState == 2) {
 	}
 }
 
-
 if (punchState == 1 || punchState == 2) {
     if (stateTimer > 1) {
-	    stateTimer -= 1
+	    stateTimer -= 1;
 	} else if (stateTimer = 1) {
 		subState += 1;
 		stateTimer -= 1;
@@ -104,7 +104,49 @@ if (punchState == 1 || punchState == 2) {
 	}
 }
 
-//Initiate active arm paths
+
+// Handle override states passed from player object
+
+//State 1 - slide
+if (stateOverride == 1) {
+	childSpeed = subStateData.idleSpeedArray[0];
+	switch (enemyOffset) {
+		case 1:
+		    currentRightPath = pathData.slide[3];
+			currentLeftPath = pathData.slide[3];
+		    break;
+		case -1:
+		    currentRightPath = pathData.slide[0];
+			currentLeftPath = pathData.slide[0];
+		    break;
+		default:
+		    currentRightPath = pathData.slide[1];
+			currentLeftPath = pathData.slide[2];
+		    break;
+	}
+}
+
+//State 2 - block
+if (stateOverride == 2) {
+	childSpeed = subStateData.idleSpeedArray[0];
+	switch (enemyOffset) {
+		case 1:
+		    currentRightPath = pathData.block[0];
+			currentLeftPath = pathData.block[3];
+		    break;
+		case -1:
+		    currentRightPath = pathData.block[0];
+			currentLeftPath = pathData.block[3];
+		    break;
+		default:
+		    currentRightPath = pathData.block[1];
+			currentLeftPath = pathData.block[2];
+		    break;
+	}
+}
+
+// Initiate active arm paths
+
 path_start(currentRightPath, 0, 0, 0);
 //right arm position
 for (var i = 0; i < 6; ++i) {
@@ -114,6 +156,7 @@ for (var i = 0; i < 6; ++i) {
 	armDataRight[i].x = x + armOffset[0] + xOnPath;
 	armDataRight[i].y = y - armOffset[1] + yOnPath;
 }
+
 path_start(currentLeftPath, 0, 0, 0);
 //left arm position
 for (var i = 0; i < 6; ++i) {

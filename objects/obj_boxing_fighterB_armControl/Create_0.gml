@@ -1,16 +1,18 @@
 //inputs
-keySpace = 0;
-keyShift = 0;
+keyLeft = 0;
+keyRight = 0;
 //vars
 punchState = 0;
 subState = 0;
 stateTimer = 0;
+stateOverride = 0;
+
 
 stateQueue = 0;
 queueState = "open";
 
 armOffset = [240, 80];
-turnOffset = -10; 
+turnOffset = 0; 
 enemyOffset = 0; // direction player is facing
 
 pathData = {
@@ -59,6 +61,18 @@ pathData = {
 		path_boxing_center_jabR1L,
 		path_boxing_center_idle,
 		path_boxing_center_idle
+	],
+	slide: [
+		path_boxing_right_slide,
+		path_boxing_center_slide,
+		path_boxing_center_slide1,
+		path_boxing_left_slide
+	],
+	block: [
+		path_boxing_right_block,
+		path_boxing_center_block,
+		path_boxing_center_block1,
+		path_boxing_left_block
 	]
 }
 subStateData = {

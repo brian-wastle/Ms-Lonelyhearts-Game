@@ -11,3 +11,8 @@ slideSpeed = 0.02; // Adjust this value for smoother sliding
 trackSpeed = 0.005; // Adjust this value for smoother tracking when outside offsetDistance
 targetSlidingX = 0; // Initialize target position for sliding
 playerMovingToward = 0;
+playerMovingAway = 0;
+
+player_near_left_edge = 0;
+player_near_right_edge = 0;
+screenBuffer = 500;
