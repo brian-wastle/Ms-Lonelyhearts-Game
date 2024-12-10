@@ -1,7 +1,9 @@
+gameStatus = 1;
+levelProgress = 0;
 
+levelFrames = 0;
+levelSecs = 0;
+levelMins = 0;
+levelHours = 0;
 
-
-//character sprite arrays
-
-
-
+depth = -5000;

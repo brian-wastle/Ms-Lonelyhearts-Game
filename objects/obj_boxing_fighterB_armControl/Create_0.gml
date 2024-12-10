@@ -12,7 +12,7 @@ stateQueue = 0;
 queueState = "open";
 
 armOffset = [240, 80];
-turnOffset = 0; 
+turnOffset = -50; 
 enemyOffset = 0; // direction player is facing
 
 pathData = {

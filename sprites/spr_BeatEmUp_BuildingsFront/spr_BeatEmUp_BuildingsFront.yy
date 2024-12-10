@@ -26,7 +26,7 @@
   "origin":1,
   "parent":{
     "name":"buildingsfront",
-    "path":"folders/Sprites/beatEmUp/bgs/buildingsfront.yy",
+    "path":"folders/Sprites/beatEmUp/bgs/parallax/buildingsfront.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

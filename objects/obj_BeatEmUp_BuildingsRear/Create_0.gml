@@ -3,4 +3,4 @@ spriteOffset = 0;
 camMiddleX = 0;
 
 
-depth = 3750;
+depth = 350;

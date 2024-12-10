@@ -73,9 +73,9 @@ if (playerState = 2) {
 	accel = accel/4;
 	decel = decel/4;
 	
-	if (keyA && !keyD) {
+	if (keyA && !keyD && enemyPos == 1) {
         speed = max(speed - accel, -maxSpeed/4);
-    }  else if (keyD && !keyA) {
+    }  else if (keyD && !keyA && enemyPos == -1) {
         speed = min(speed + accel, maxSpeed/4);
     } else {
 		playerState = 0;
@@ -86,8 +86,8 @@ if (playerState = 2) {
 
 //Handle background scrolling
 
-var playerNearLeftEdge = (x <= roomLeftBound && speed < 0);
-var playerNearRightEdge = (x >= roomRightBound && speed > 0);
+playerNearLeftEdge = (x <= roomLeftBound && speed < 0);
+playerNearRightEdge = (x >= roomRightBound && speed > 0);
 
 if ((playerNearLeftEdge || playerNearRightEdge) || playerState = 1) {
 	var initialSign = sign(-speed);

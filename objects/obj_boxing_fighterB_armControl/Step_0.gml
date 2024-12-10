@@ -3,7 +3,7 @@ keyRight = keyboard_check_pressed(vk_right);
 enemyOffset = abs(obj_boxing_fighterB.x - obj_boxing_fighterA.x) > 150 ? 
 	sign(obj_boxing_fighterB.x - obj_boxing_fighterA.x) : 0;
 var turn = turnOffset * enemyOffset;
-x = obj_boxing_fighterB.x - turn;
+x = obj_boxing_fighterB.x + turn;
 y = obj_boxing_fighterB.y;
 
 //trigger punch states

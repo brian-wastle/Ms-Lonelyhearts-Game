@@ -12,4 +12,4 @@ if (instanceDistance < -1000) {
 	instanceDistance = -1000;
 }
 
-spriteOffset = (instanceDistance/1000) * -20;
+spriteOffset = (instanceDistance/1000) * -40;

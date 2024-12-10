@@ -20,6 +20,8 @@ backgroundSpeed = 0;
 targetSpeed = 0;
 punchState = 0;
 xOffset = 0; // Difference in x position between player and enemy
+instance_create_layer(0,0,"Background2", obj_boxing_standsControl);
+instance_create_layer(0,0,"Spotlight", obj_boxing_spotlight);
 
 //slide
 slideTime = .4;
@@ -30,3 +32,5 @@ cy = 0;
 enemyPos = 0;
 targetDir = 0;
 
+playerNearLeftEdge = 0;
+playerNearRightEdge = 0;

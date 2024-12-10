@@ -10,8 +10,8 @@
   "name":"obj_BeatEmUp_controlObject",
   "overriddenProperties":[],
   "parent":{
-    "name":"runAndGun",
-    "path":"folders/Objects/runAndGun.yy",
+    "name":"beatEmUp",
+    "path":"folders/Objects/beatEmUp.yy",
   },
   "parentObjectId":null,
   "persistent":false,
