@@ -13,7 +13,10 @@
     "name":"player group",
     "path":"folders/Objects/beatEmUp/player group.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_beatEmUp_collisionParent",
+    "path":"objects/obj_beatEmUp_collisionParent/obj_beatEmUp_collisionParent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -35,6 +38,9 @@
     "name":"spr_BeatEmUp_PlayerGirlIdle",
     "path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_beatEmUp_medCharCollision",
+    "path":"sprites/spr_beatEmUp_medCharCollision/spr_beatEmUp_medCharCollision.yy",
+  },
   "visible":true,
 }

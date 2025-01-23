@@ -12,12 +12,17 @@
 //10 - Knock Down
 
 //13 - Die
-//14 - Fall 
+//14 - Fall
 
 
+////DEBUG
 
+if (keyboard_check_pressed(ord("Y"))) {
+    x += 1000;
+}
 
-	
+depth = -y;
+
 if !gamepad_is_connected(global.pad) {
 
 	key_right = keyboard_check(ord("D"));
@@ -114,180 +119,172 @@ if !gamepad_is_connected(global.pad) {
 	}
 	
 	if (actionstate = 2) {	
-		if image_index >= 1.5 {
-			image_speed = 0;
-		}
-		zspJump -= .75;
+		if (image_index >= 2) {
+			if (airAttackState == 0) {
+				if (zspJump < 13) {
+				    image_index = 3;
+				} else {
+					image_index = 2;
+				}
+				image_speed = 0;
+			}
+		    zspJump -= .75;
 	
-	
-		//move vertically	
-		if (zspJump > zspMaxJump) {
-			zspJump = zspMaxJump;
-		}
-		zsp += zspJump;
+			//move vertically	
+			if (zspJump > zspMaxJump) {
+				zspJump = zspMaxJump;
+			}
+			zsp += zspJump;
 			
-			
-		//move horizontally
-		if key_right && (abs(hspJump) < hspMaxJump) {
-			hspJump += .6;
-		}
-		if key_left && (abs(hspJump) < hspMaxJump) {
-			hspJump -= .6;
-		}
-		hsp = hspJump;
+			//move horizontally
+			if key_right && (abs(hspJump) < hspMaxJump) {
+				hspJump += .6;
+			}
+			if key_left && (abs(hspJump) < hspMaxJump) {
+				hspJump -= .6;
+			}
+			hsp = hspJump;
 	
-		//move forward and backward
-		if key_up && (abs(vspJump) < vspMaxJump) {
-			vspJump -= .6;
+			//move forward and backward
+			if key_up && (abs(vspJump) < vspMaxJump) {
+				vspJump -= .6;
+			}
+			if key_down && (abs(vspJump) < vspMaxJump) {
+				vspJump += .6;
+			}
+			vsp = vspJump;
 		}
-		if key_down && (abs(vspJump) < vspMaxJump) {
-			vspJump += .6;
-		}
-		vsp = vspJump;
+		
 	}
 	
 ////////////////////////////////// Actionstate 3 - Attack Combo
 
-	
-
 	if (actionstate = 3) {
-		if (delayTimer = 0) {
-			sprite_index = charArray[2,playerChar];
-		}
-		if (attackTimer > 0) {
-			attackTimer -= 1;
+		var timerLimit = 4;
+		comboTimer += 1;
+		
+		if (image_index > 5 && image_index < 9) {
+		    timerLimit = 2;
+		} 
+		
+		if (image_index > 10 && image_index < 15) {
+		    timerLimit = 2;
 		}
 		
-		if (key_attack && image_index = 0) {
-			attackQueue = 1;
-		}
-		if (key_attack && (image_index = 1 || image_index = 2)) {
-			attackQueue = 1;
+		if (image_index > 16 && image_index < 21) {
+		    timerLimit = 2;
 		}
 		
-		if (attackTimer = 0 && image_index > 2) {
-			image_index += .8;
-			attackTimer = 5;
+		switch (image_index) {
+		    case 9:
+		    case 15:
+		    case 22:
+				timerLimit = 8;
+				break;
 		}
-		if (attackTimer = 0 && image_index = 2 && attackQueue > 0) {
-			image_index = 3;
-			attackTimer = 5;
-		}
-		if (attackTimer = 0 && image_index = 1 ) {
-			image_index = 2;
-			attackTimer = 10;
-		}
-		if (attackTimer = 0 && image_index = 0 && attackQueue > 0) {
-			image_index = 1;
-			attackQueue = 0;
-			attackTimer = 5;
+			
+		if (comboTimer == timerLimit) {
+			comboTimer = 0;
+			image_index += 1;
 		}
 		
-		if ((attackTimer = 0 && attackQueue = 0) || image_index >= image_number - 1) {
-			sprite_index = charArray[0,playerChar];
-			hsp = 0;
-			vsp = 0;
-			if delayTimer <= 0 {
-				delayTimer = 10;
-			}
-			attackQueue = 0;
-		}
-		
-		if (delayTimer > 0) {
-			delayTimer -= 1;
-			if (delayTimer = 1) {
+		switch (image_index) {
+		    case 3:
+		    case 6:
+		    case 12:
+			case 17:
+		        if (attackQueue = 1 && comboTimer == 0) {
+				    attackQueue = 0;
+				} else if (attackQueue = 0 && comboTimer == 0) {
+					sprite_index = charArray[0,playerChar];
+					actionstate = 0;
+				}
+		        break;
+			case image_number: 
+				sprite_index = charArray[0,playerChar];
 				actionstate = 0;
-				delayTimer = 0;
-			}
+		    default:
+		        if (key_attack) {
+				    attackQueue = 1;
+				}
+		        break;
 		}
-	
-	//char specific
-		if playerChar = 2 {
-			if (image_index >= 4) {
-				if (!instance_exists(obj_beatEmUp_PlayerRobotSmoke)) {
-					instance_create_layer(x,y,"Instances",obj_beatEmUp_PlayerRobotSmoke);
-				}
-				if (attackTimer > 0) {
-					attackTimer -= .5;
-				}
-				if (directionOffset = 1) {
-					if (hsp = 0) {
-						hsp = 8;
-					};
-				} else if (directionOffset = -1) {
-					if (hsp = 0) {
-						hsp = -8;
-					}
-				}
-				hsp *= 1.05;
-			}
+		
+		if (image_index > 21) {	
+			x += directionOffset * 4;
 		}
+		
 	}
 
 	if (actionstate < 2 && key_attack) {
-		hsp = 0;
-		vsp = 0;
+		actionstate = 3;
+		sprite_index = charArray[2, playerChar];
 		image_index = 0;
 		image_speed = 0;
-		attackTimer = 15;
-		actionstate = 3;
+		hsp = 0;
+		vsp = 0;
 	}
 	
 ////////////////////////////////// Air Attacks
 
-if (sprite_index = charArray[3,playerChar] && key_attack && image_index < 2) {
-	if (key_left || key_right || key_up || key_down) {
-		image_index = 2;
-		if playerChar = 2 {
-			if (!instance_exists(obj_beatEmUp_PlayerRobotSmoke)) {
-				instance_create_layer(x,y,"Instances",obj_beatEmUp_PlayerRobotSmoke);
+	if (sprite_index = charArray[3,playerChar] && key_attack && jumpStatus == 2 && (image_index < 4 || image_index > 5)) {
+		// Forward Air Attack
+		//if (key_left || key_right || key_up || key_down) {
+			if (actionstate == 2 || (actionstate == 14 )) {
+			    image_index = 3;
+				image_speed = 1;
+				airAttackState = 1;
 			}
-			if (directionOffset = 1) {
-				hspJump += 8;
-			} else {
-				hspJump -= 8;
-			}
-			
-		}
-	} else if (!key_left && !key_right && !key_up && !key_down) {
-		image_index = 3;
-		if playerChar = 2 {
-			if (!instance_exists(obj_beatEmUp_PlayerRobotSmoke)) {
-				instance_create_layer(x,y,"Instances",obj_beatEmUp_PlayerRobotSmoke);
-			}
-			if (directionOffset = 1) {
-				hspJump += 4;
-			} else {
-				hspJump -= 4;
-			}
-			
-		}
-	}
-}
 
-if (sprite_index = charArray[3,playerChar] && image_index >= 3) {
-	image_speed = .8;
-	if (image_index >= image_number-.5) {
-		image_index = 5;
-		image_speed = 0;
+			
+			if playerChar = 2 {
+				if (!instance_exists(obj_beatEmUp_PlayerRobotSmoke)) {
+					instance_create_layer(x,y,"Instances",obj_beatEmUp_PlayerRobotSmoke);
+				}
+				if (directionOffset = 1) {
+					hspJump += 8;
+				} else {
+					hspJump -= 8;
+				}
+			
+			}
+		
+		
+	//} 
+	
+	// Neutral Air attack
+	//else if (!key_left && !key_right && !key_up && !key_down) {
+	//	image_index = 3;
+	//	if playerChar = 2 {
+	//		if (!instance_exists(obj_beatEmUp_PlayerRobotSmoke)) {
+	//			instance_create_layer(x,y,"Instances",obj_beatEmUp_PlayerRobotSmoke);
+	//		}
+	//		if (directionOffset = 1) {
+	//			hspJump += 4;
+	//		} else {
+	//			hspJump -= 4;
+	//		}
+			
+	//	}
+	//}
 	}
-}
+
 
 ////////////////////////////////// Actionstate 4 - Block
 
-if (actionstate < 2 && key_block) {
-	actionstate = 4;
-	hspWalk = 0;
-	vspWalk = 0;
-	hsp = 0;
-	vsp = 0;
-}
+	if (actionstate < 2 && key_block) {
+		actionstate = 4;
+		hspWalk = 0;
+		vspWalk = 0;
+		hsp = 0;
+		vsp = 0;
+	}
 
-if (actionstate = 4) {
-	sprite_index = charArray[2,playerChar];
-	image_index = 1;
-	image_speed = 0;
-}
+	if (actionstate = 4) {
+		sprite_index = charArray[2,playerChar];
+		image_index = 1;
+		image_speed = 0;
+	}
 
 
 ////////////////////////////////// Actionstate 14 - Falling
@@ -308,6 +305,10 @@ if (actionstate = 4) {
 
 	if actionstate = 14 {
 		if landingTimer = 0 {
+			if (airAttackState == 0) {
+				image_index = 6;
+			}
+			
 			//move horizontally
 			if key_right && (abs(hspJump) < hspMaxJump)
 				{
@@ -338,15 +339,14 @@ if (actionstate = 4) {
 		}
 
 		if landingTimer > 0 {
-			image_index = 0;
 			jumpStatus = 3;
 			landingTimer -= 1;
 		}
-		if landingTimer = 1 {
-			airAttack = 0;
+		if landingTimer == 1 {
+			airAttackState = 0;
 			landingTimer = 0;
 			actionstate = 0;
-		}
+		} 
 		
 	}
 	
@@ -354,7 +354,7 @@ if (actionstate = 4) {
 	
 
 
-	////////////////////////////////// End Step  //////////////////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////// Clean-up  //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	if (!key_jump && actionstate != 2 && actionstate != 14) {
 		jumpStatus = 0;
@@ -409,22 +409,28 @@ if (actionstate = 4) {
 		if (playerChar = 2) {
 			landingTimer = 15;
 		}
+		airAttackState = 0;
 		hspJump = 0;
 		hsp = 0;
 		vspJump= 0;
 		vsp = 0;
 		zspJump = 0;
 		zsp = 0;
-		image_index = 0;
+		image_index = 7;
+		image_speed = 0;
 	}
 
 	// (zsp / 231.25) 0 to 1
-	shadowSize = 1 * (1-(zsp / 231.25))
+	shadowSize = 1 * (1-(zsp / 231.25));
 	if (shadowSize < .5) {
 		shadowSize = .5;
 	}
 
-} // if: gamepad is not plugged in
+	if ((actionstate == 2 || actionstate == 14) && airAttackState == 1 && image_index >= 5 && jumpStatus == 2) {
+		image_index = 5;
+		image_speed = 0;
+	}
+}
 
 
 
@@ -435,7 +441,7 @@ if (actionstate = 4) {
 
 
 
-
+////// Gamepad Controls
 
 
 if gamepad_is_connected(global.pad) {
@@ -515,84 +521,15 @@ if gamepad_is_connected(global.pad) {
 	
 
 	if (actionstate = 3) {
-		if (delayTimer = 0) {
-			sprite_index = charArray[2,playerChar];
-		}
-		if (attackTimer > 0) {
-			attackTimer -= 1;
-		}
 		
-		if (gamepad_button_check_pressed(global.pad,gp_face3) && image_index = 0) {
-			attackQueue = 1;
-		}
-		if (gamepad_button_check_pressed(global.pad,gp_face3) && (image_index = 1 || image_index = 2)) {
-			attackQueue = 1;
-		}
-		
-		if (attackTimer = 0 && image_index > 2) {
-			image_index += .8;
-			attackTimer = 5;
-		}
-		if (attackTimer = 0 && image_index = 2 && attackQueue > 0) {
-			image_index = 3;
-			attackTimer = 5;
-		}
-		if (attackTimer = 0 && image_index = 1 ) {
-			image_index = 2;
-			attackTimer = 10;
-		}
-		if (attackTimer = 0 && image_index = 0 && attackQueue > 0) {
-			image_index = 1;
-			attackQueue = 0;
-			attackTimer = 5;
-		}
-		
-		if ((attackTimer = 0 && attackQueue = 0) || image_index >= image_number - 1) {
-			sprite_index = charArray[0,playerChar];
-			hsp = 0;
-			vsp = 0;
-			if delayTimer <= 0 {
-				delayTimer = 10;
-			}
-			attackQueue = 0;
-		}
-		
-		if (delayTimer > 0) {
-			delayTimer -= 1;
-			if (delayTimer = 1) {
-				actionstate = 0;
-				delayTimer = 0;
-			}
-		}
-	
-	//char specific
-		if playerChar = 2 {
-			if (image_index >= 4) {
-
-					if (!instance_exists(obj_beatEmUp_PlayerRobotSmoke)) {
-						instance_create_layer(x,y,"Instances",obj_beatEmUp_PlayerRobotSmoke);
-					}
-					if (attackTimer > 0) {
-						attackTimer -= .5;
-					}
-					if (directionOffset = 1) {
-						speed = 8;
-						direction = 0;
-					} else if (directionOffset = -1) {
-						speed = 8;
-						direction = 180;
-					}
-				
-
-			}
-		}
 	}
+	
+	
 
 	if (actionstate < 2 && gamepad_button_check_pressed(global.pad,gp_face3)) {
 		speed = 0;
 		image_index = 0;
 		image_speed = 0;
-		attackTimer = 15;
 		actionstate = 3;
 	}
 	
@@ -658,9 +595,6 @@ if gamepad_is_connected(global.pad) {
 	if actionstate = 14 {
 		if landingTimer = 0 {
 
-			//direction = point_direction(0, 0, haxis, vaxis);
-			//speed = point_distance(0 ,0, haxis, vaxis * .7) * 7;
-	
 			//drop from jump height
 			zspJump += 1;
 	
@@ -677,7 +611,7 @@ if gamepad_is_connected(global.pad) {
 			landingTimer -= 1;
 		}
 		if landingTimer = 1 {
-			airAttack = 0;
+			airAttackState = 0;
 			landingTimer = 0;
 			actionstate = 0;
 		}
@@ -688,7 +622,7 @@ if gamepad_is_connected(global.pad) {
 	
 
 
-	////////////////////////////////// End Step  //////////////////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////// Clean-up  //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	if (!gamepad_button_check(global.pad,gp_face1) && actionstate != 2 && actionstate != 14) {
 		jumpStatus = 0;
@@ -719,21 +653,21 @@ if gamepad_is_connected(global.pad) {
 		y = 1075;
 	}	
 	
-	
 	/////////////////////////// Actionstate 14 - Falling
-		
+
 	if ((zsp <= 0) && actionstate = 14 && jumpStatus = 2) { 
 		landingTimer = 10;
 		if (playerChar = 2) {
 			landingTimer = 15;
 		}
+		speed = 0;
 		zspJump = 0;
 		zsp = 0;
-		image_index = 0;
+		image_index = image_number - 1;
 	}
 
-	// (zsp / 231.25) 0 to 1
-	shadowSize = 1 * (1-(zsp / 231.25))
+	// Resize player shadow
+	shadowSize = 1 * (1-(zsp / 231.25));
 	if (shadowSize < .5) {
 		shadowSize = .5;
 	}

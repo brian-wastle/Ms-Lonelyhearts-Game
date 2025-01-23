@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_BeatEmUp_Wall1",
-    "path":"sprites/spr_BeatEmUp_Wall1/spr_BeatEmUp_Wall1.yy",
+    "name":"spr_BeatEmUp_WallLight",
+    "path":"sprites/spr_BeatEmUp_WallLight/spr_BeatEmUp_WallLight.yy",
   },
   "spriteMaskId":null,
   "visible":true,
