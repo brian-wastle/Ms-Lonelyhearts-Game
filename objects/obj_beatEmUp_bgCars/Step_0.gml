@@ -11,6 +11,10 @@ if (lerpTimer >= lerpDuration) {
     moveDir *= -1;
 }
 
+x = (x div 4) * 4;
+y = (y div 4) * 4;
+
+
 if (x < 3380) {
     instance_destroy();
 }

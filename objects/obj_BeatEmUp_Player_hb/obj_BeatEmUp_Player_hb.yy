@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_BeatEmUp_Player_hb",
+  "%Name":"obj_beatEmUp_Player_hb",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_BeatEmUp_Player_hb",
+  "name":"obj_beatEmUp_Player_hb",
   "overriddenProperties":[],
   "parent":{
     "name":"player group",
@@ -38,5 +38,5 @@
     "path":"sprites/spr_BeatEmUp_PlayerGirlIdle_hb/spr_BeatEmUp_PlayerGirlIdle_hb.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

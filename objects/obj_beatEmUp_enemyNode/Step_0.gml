@@ -46,34 +46,6 @@ if (nodeState == 1) {
 	}
 }
 
-if (nodeState == 2) {
-	if (stateTimer < 90) {
-		stateTimer += 1; 
-	} else {
-		if (idleEnemyCount > 0) {
-			stateTimer = 0;
-			sortEnemiesByDistance(enemyArray);
-			var closestEnemy = enemyArray[0];
-		    for (var i = 0; i < array_length(enemyArray); ++i) {
-			    if (closestEnemy == initialArray[i] && initialArray[i].aggroState == 0) {
-				    enemyAggroArray[i] += 1;
-				}
-				if (enemyAggroArray[i] >= 2 && initialArray[i].aggroState == 0) {
-				    initialArray[i].aggroState = 1;
-					idleEnemyCount -= 1;
-				}
-			}
-		} else {
-			nodeState = 3;
-		}
-	}
-}
-
-
-
-
-
-
 // Track enemy health, resize enemyArray, clean-up object
 for (var i = array_length(enemyArray) - 1;  i >= 0; --i) {
     if (enemyArray[i].enemyHealth <= 0) {

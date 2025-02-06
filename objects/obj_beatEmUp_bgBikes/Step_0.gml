@@ -4,3 +4,6 @@ if (x > 4720) {
 }
 
 speed *= rate;
+
+x = (x div 4) * 4;
+y = (y div 4) * 4;

@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":283,
   "bbox_left":0,
-  "bbox_right":119,
+  "bbox_right":127,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6434a3fe-e741-4f96-8bfd-aaa1b92d81ca","name":"6434a3fe-e741-4f96-8bfd-aaa1b92d81ca","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"92e2f708-751e-4705-b336-66e923a1c9f9","name":"92e2f708-751e-4705-b336-66e923a1c9f9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":284,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"940f0d4d-257e-4aa1-866c-dbdceac5ec14","blendMode":0,"displayName":"default","isLocked":false,"name":"940f0d4d-257e-4aa1-866c-dbdceac5ec14","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"504aa596-d13c-4f1a-9124-5a71028405f1","blendMode":0,"displayName":"default","isLocked":false,"name":"504aa596-d13c-4f1a-9124-5a71028405f1","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_BeatEmUp_PlayerGirlIdle",
   "nineSlice":null,
@@ -69,13 +69,13 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6434a3fe-e741-4f96-8bfd-aaa1b92d81ca","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a1783a0a-744f-4145-ace8-0004d8c95221","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"92e2f708-751e-4705-b336-66e923a1c9f9","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"1ee44da0-d6a3-4083-a077-df060601abc1","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":59,
+    "xorigin":52,
     "yorigin":284,
   },
   "swatchColours":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":120,
+  "width":128,
 }

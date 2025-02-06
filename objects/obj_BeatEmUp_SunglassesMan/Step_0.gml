@@ -1,6 +1,6 @@
 
 
-if obj_BeatEmUp_Player.x > 6434 {
+if obj_beatEmUp_player.x > 6434 {
 	image_speed = 1.3;
 }
 

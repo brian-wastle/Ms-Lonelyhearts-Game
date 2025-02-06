@@ -16,9 +16,16 @@ depth = -5000; //set above everything for drawing debug text
 // spawnSide; -1 for Left, 1 for Right, declared by control object on instantiation
 // spawnPoint[]; list of indexes from spawnPointArray, declared by control object on instantiation
 // spawnPointArray = [732, 800, 880, 950];  Y spawn coordinates used by obj_beatEmUp_enemyNode (for reference)
+//instance_create_layer(x, y, "Instances", obj_beatEmUp_enemyNode, {
+//		enemyCount: 3, 
+//		charIndexArray: [0,0,0],
+//		spawnSide: [-1, 1, -1],
+//		spawnPoint: [1,2,3]
+//	});
+
 instance_create_layer(x, y, "Instances", obj_beatEmUp_enemyNode, {
-		enemyCount: 3, 
-		charIndexArray: [0,0,0],
-		spawnSide: [-1, 1, -1],
-		spawnPoint: [1,2,3]
+		enemyCount: 1, 
+		charIndexArray: [0],
+		spawnSide: [-1],
+		spawnPoint: [1]
 	});

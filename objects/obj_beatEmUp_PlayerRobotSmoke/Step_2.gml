@@ -1,2 +1,2 @@
-x = obj_BeatEmUp_Player.x;
-y = obj_BeatEmUp_Player.y;
+x = obj_beatEmUp_player.x;
+y = obj_beatEmUp_player.y;

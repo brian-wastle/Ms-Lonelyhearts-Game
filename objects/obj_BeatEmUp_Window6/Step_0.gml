@@ -1,4 +1,4 @@
-if (obj_BeatEmUp_Player.x > 7643 && image_index == 0) {
+if (obj_beatEmUp_player.x > 7643 && image_index == 0) {
 	init = 1;
 }
 

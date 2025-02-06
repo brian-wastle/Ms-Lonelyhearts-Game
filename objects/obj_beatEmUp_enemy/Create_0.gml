@@ -1,56 +1,97 @@
-enemyState = 100; // State 100 - Appear from the margins of the screen
-previousState = 0; // State of previous step
-enemyHealth = 100;
-aggroState = 0;
+/// --- GENERAL SETUP ---
+// Random seed if you want variation in freezeTimer or other random events
 randomize();
-freezeTimer = irandom_range(120,180); // Used to add delay within a state or during transitions between states
-spriteArray = [[
-spr_beatEmUp_yjacketIdle,
-spr_beatEmUp_yjacketWalk,
-spr_beatEmUp_yjacketDamage,
-spr_beatEmUp_yjacketAttack1
-]];
-sprite_index = spriteArray[charIndex][1];
 
-// Initialize and appear onscreen
-dirOffset = 0;
-mid_x = view_get_xport(0) + (view_get_wport(0) / 2);
+/// --- ENEMY STATE & HEALTH ---
+enemyState      = 100;   // 100 = Appear from screen margins
+previousState   = 0;     // Previous step’s state
+enemyHealth     = 500;   // Starting health
+
+/// --- TIMERS & UTILITY ---
+freezeTimer     = irandom_range(120, 180); // Delay used across multiple states
+iFrameTimer     = 0;     // I-frames after being hit
+shakeTimer      = 0;     // Timer for shaking/flashing effects
+knockbackTimer	= 0;	 // Timer for handling knockback image_index
+shakeDir        = 1;     // +/- direction for shake
+shakeOffset     = 0;     // Pixel offset for shake effect
+currentOpac     = 1;     // Current draw opacity
+finalOpac       = 1;     // Used when fading out enemies
+hitflag			= 0;	 // Keeps track of hitStop state
+playerHitflag	= 0;	 // Track player's hitflag state
+currentIndex	= 0;	 // Track enemy hitbox object's image_index to control hitflag
+comboTimer		= 0;	 // Track frame length for attack animations
+hitboxInst		= 0;	 // Hitbox object instance
+
+/// --- SPRITE & ANIMATION ---
+// Assume you have charIndex defined somewhere else (e.g. in the parent object or globally)
+spriteArray = [
+    [
+        spr_beatEmUp_yjacketIdle,   // 0
+        spr_beatEmUp_yjacketWalk,   // 1
+        spr_beatEmUp_yjacketDamage, // 2
+        spr_beatEmUp_yjacketAttack1, // 3
+		spr_beatEmUp_yjacketGrabbed // 4
+    ]
+];
+
+heightArray = [272];
+
+sprite_index = spriteArray[charIndex][1];  // Start on a "walk" or default sprite
+image_index  = 0;
+image_speed  = 1; 
+
+/// --- POSITIONING & MOVEMENT GOALS ---
+dirOffset = 0;  // Will be -1 or +1 depending on left/right of player
+xGoal     = 0;  // Where we want the enemy to move horizontally
+yGoal     = y;  // Where we want the enemy to move vertically
+playerDist= 0;  // Distance to player
+shadowSize= 0;  // Size of shadow (scaled by z-position if 2.5D)
+
+/// --- CAMERA / VIEW SETUP ---
+var mid_x = view_get_xport(0) + (view_get_wport(0) / 2);
 if (x < mid_x) {
-    // Left side
-	dirOffset = -1;
+    // Enemy spawns on the left
+    dirOffset = -1;
 } else {
-    // Right side
-	dirOffset = 1;
+    // Enemy spawns on the right
+    dirOffset = 1;
 }
-xGoal = 0;
-yGoal = y;
-xGoal = mid_x + 760 * dirOffset;
-shadowSize = 0;
+xGoal = mid_x + 760 * dirOffset; // Appear from margin
 
-//pathfinding
-movePath = path_add();
-path_set_kind(movePath, 1);
-path_set_precision(movePath, 8);
+/// --- PATHFINDING / AI ---
+foundPosition  = 0;       // Used in states 8 & 10 to find a valid position
+targetSet      = 0;       // For storing position once
+targetX        = 0;
+targetY        = 0;
+pathState      = 0;       // Used for detours around player
+finalTargetX   = 0;
+initialPlayerX = 0;       
+initialEnemyX  = 0;
+tempDistance   = 0;
 
-zsp = 0;
-pathTimer = 0;
-xProximity = 0;
-yProximity = 0;
-foundPosition = 0;
-targetX = 0; // Used for pathfinding when target is not player
-targetY = 0; 
+/// --- KNOCKBACK, BOUNCE, & SLIDE ---
+knockbackState     = 0;   // Tracks sub-state of knockback in enemyState=7
+knockbackDir       = 1;   // Direction for knockback
+hitAgain           = 0;   // Flag to handle mid-air juggles
+zsp                = 0;   // “z-position” (vertical offset above ground)
+zMaxKO             = 150; // Parabolic arc height if you used param approach
+zMaxBounce         = 45;  // Arc height for second bounce
+knockbackSpeed     = 0.03;
+bounceProgress     = 0;
+bounceSpeed        = 0.04;
+slideSpeed         = 6;   // Speed for sliding to a stop
 
-// Combat
-comboTimer = 0;
-attackStack = 0; // Current number of combo hits towards a KO
-shakeOffset = 0; // Distance for shake effect during damage state
-shakeDir = 0;
-iFrameTimer = 0; // How long enemy is invincible after being hit to prevent double damage
-knockbackState = 0; // Tracks enemy position when knocked back
-initialX = 0 // Track initial position for knockback state
-finalX = 0; // Target x position
-zMaxKO = 150; // Adjust for desired arc height
-knockbackProgress = 0;
-knockbackSpeed = 0.03; // Adjust for duration (higher = faster)
-knockbackState = 0; // Prevent reinitialization
-knockbackDistance = 400;
+/// --- VELOCITY-BASED JUGGLE / PHYSICS ---
+xVel        = 0;    // Horizontal velocity
+zVel        = 0;    // Vertical velocity for “z” arc
+zGravity    = 0.6;  // Gravity pulling enemy back down
+bounceFactor= 0.5;  // Velocity multiplier on bounce
+edgeSlamOldVel = 0; // Store velocity before freezing at wall
+
+/// --- COMBAT & ATTACKS ---
+attackStack = 0; // Number of hits taken toward a KO
+comboTimer  = 0; // Timer for potential combos
+hbFlag = 0; // track creating of hitbox object
+
+/// --- SHADOW / DEPTH ---
+depth = -y; 

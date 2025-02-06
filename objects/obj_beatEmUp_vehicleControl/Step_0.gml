@@ -1,4 +1,4 @@
-if (obj_BeatEmUp_Player.x > 5242) {
+if (obj_beatEmUp_player.x > 5242) {
     instance_destroy();
 }
 
@@ -80,8 +80,6 @@ switch (actionState) {
 		}
         break;
 }
-
-
 
 //cars
 if (carTimer > 0) {

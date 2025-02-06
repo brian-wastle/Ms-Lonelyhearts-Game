@@ -8,7 +8,7 @@ if (image_index >= image_number - .5) {
 	}
 }
 
-if (obj_BeatEmUp_Player.x >= 1920 && animState == 0) {
+if (obj_beatEmUp_player.x >= 1920 && animState == 0) {
 	animState = 1;
 }
 
