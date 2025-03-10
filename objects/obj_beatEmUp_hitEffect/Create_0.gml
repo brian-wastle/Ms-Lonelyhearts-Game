@@ -6,12 +6,14 @@ effectType = 0;
 if (obj_beatEmUp_player.actionstate == 3) {
     effectType = 0;
 } else if (obj_beatEmUp_player.actionstate == 11) {
-	effectType = 2;
-} else if (obj_beatEmUp_player.airAttackState == 1) {
 	effectType = 1;
+} else if (obj_beatEmUp_player.airAttackState == 1) {
+	effectType = 2;
+} else if (obj_beatEmUp_player.airAttackState == 2) {
+	effectType = 3;
 }
 
-//combo offsets
+// Combo offsets
 effectOffset[0,0] = [
 	{index: 0, xOffset: 140, yOffset: 216},
 	{index: 3, xOffset: 140, yOffset: 216},
@@ -20,15 +22,21 @@ effectOffset[0,0] = [
 	{index: 22, xOffset: 160, yOffset: 236}
 ];
 
-//back attack
-effectOffset[2,0] = [
+// Back attack
+effectOffset[1,0] = [
 	{index: 1, xOffset: -164, yOffset: 204},
 ]
 
-//air attack
-effectOffset[1,0] = [
+// Air attack
+effectOffset[2,0] = [
 	{index: 5, xOffset: 154, yOffset: 144}
 ];
+
+// Spike attack
+effectOffset[3,0] = [
+	{index: 5, xOffset: 0, yOffset: 0}
+];
+
 structArray = effectOffset[effectType,char];
 xOffset = 0;
 yOffset = 0;

@@ -1,5 +1,6 @@
 image_index = parentId.image_index;
-if (image_index >= image_number - 1) {
+enemyState = parentId.enemyState;
+if (image_index >= image_number - 1 || enemyState != 5) {
 	instance_destroy();
 }
 

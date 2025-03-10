@@ -1,3 +1,22 @@
+// Enemy States
+// 100			- Appear on screen
+// 0			- Idle
+// 1			- Chase
+// 2			- Walk up medium range
+// 3			- Line up vertically
+// 4			- Move in to attack
+// 5			- Attack
+// 6			- Take Damage
+// 7			- KO'd
+// 8			- Wait when player is stacked with enemies
+// 9			- Avoid overlap with other enemies
+// 10			- Detour to opposite side of player when required to attack
+// 11			- Back away when too close to player
+// 12			- Grabbed
+// 13			- Dead
+
+
+
 depth = -y;
 dirOffset = (sign(obj_beatEmUp_player.x - x) != 0) ? sign(obj_beatEmUp_player.x - x) : dirOffset;
 shakeOffset = 0;
@@ -25,30 +44,151 @@ if (enemyState == 100) {
 
 // Damage Triggers
 if (place_meeting(x, y, obj_beatEmUp_Player_hb) && enemyHealth > 0 && hitflag == 0 && enemyState != 13) {
-	var playerZsp = obj_beatEmUp_player.zsp;
-	if (playerZsp >= zsp && abs(playerZsp - zsp) <= 120) || 
-	(playerZsp < zsp && (abs(playerZsp - zsp) < 180)) {
-		obj_beatEmUp_player.freezeTimer = 4;
-		playerHitflag = obj_beatEmUp_Player_hb.hitflag;
-		hitflag = playerHitflag;
-	    if (enemyState == 6) {
+	var player = obj_beatEmUp_player;
+	var actionstate = player.actionstate;
+	spikeFlag = 0;
+	playerHitflag = obj_beatEmUp_Player_hb.hitflag;
+	hitflag = playerHitflag;
+	
+	// If enemy is already in a damage stun lock
+	if (enemyState == 6) {
+		if (actionstate == 3) {
+			// If player is in combo attack
+			player.freezeTimer = 4;
 			enemyHealth -= 20;
-		    attackStack += 1;
-		    freezeTimer = 40;
-	    } else if (enemyState != 7) {
-			enemyHealth -= 20;
-	        enemyState = 6;
-			comboTimer = 0;
-	        freezeTimer = 30;
-	    } else if (enemyState == 7 && zsp > 90 && (knockbackState > 0 && knockbackState < 11)) {
-			// Juggle/knockback
+			attackStack += 1;
+			freezeTimer = 40;
+			if (player.image_index >= 22 && player.image_index < 23) {
+				attackStack = 5;
+			}
+		} else if (player.airAttackState == 1) {
+		// If player is in air attack 1
+			var zDiff = player.zsp - zsp;	//Enemy below player returns positive value
+			if (zDiff < 144) {
+				player.freezeTimer = 8;
+				enemyHealth -= 20;
+				attackStack += 1;
+				freezeTimer = 40;
+			} else {
+				hitflag = 0;
+			}
+		} else if (player.airAttackState == 2) {
+		// If player is in spike
+			var zDiff = player.zsp - zsp;	//Enemy below player returns positive value
+			if (zDiff < 272) {
+				player.freezeTimer = 8;
+				enemyHealth -= 10;
+			    enemyState = 7;            // Go directly to knockdown
+				spikeFlag = 1;             // Mark that we’re spiked
+				bounceFactor = .75;
+				knockbackForce = -30;      // Negative => forcibly shoot downward
+				knockbackDist = 0;         // No horizontal push, or set how you like
+				knockbackState = 0;        // Reset the sub-state so it re-initializes
+				freezeTimer = 0;           // So it goes immediately
+				comboTimer = 0;
+			} else {
+				hitflag = 0;
+			}
+		}
+			
+	// If enemy is already KO'd
+	} else if (enemyState == 7) {
+		// If player is in combo attack and enemy is in the air -- juggle
+		if (zsp > 72 && zsp < 176 && (knockbackState > 0 && knockbackState < 11) 
+		&& actionstate == 3) {
+			player.freezeTimer = 4;
 			enemyHealth -= 10;
 			knockbackDir = (x > obj_beatEmUp_player.x) ? 1 : -1;
 			xVel = 12 * knockbackDir;
-			zVel = 8;  
-			zVel += 4;  
-			knockbackState = 1; 
+			zVel = 12;  
+			knockbackDist = 12;
+			knockbackForce = 12;
+			knockbackState = 1;
+			freezeTimer = 4;
+		} else if ((knockbackState > 0 && knockbackState < 11) && player.airAttackState == 1) {
+		// If player is in air attack 1
+			var zDiff = player.zsp - zsp;	//Enemy below player returns positive value
+			if (zsp > 12 && zDiff < 12 && zDiff > -160) {
+				player.freezeTimer = 8;
+				enemyHealth -= 10;
+				knockbackDir = (x > obj_beatEmUp_player.x) ? 1 : -1;
+				xVel = 14 * knockbackDir;
+				zVel = 8;  
+				knockbackDist = 14;
+				knockbackForce = 8;
+				knockbackState = 1;
+				freezeTimer = 8;
+			} else {
+				hitflag = 0;
+			}
+		} else if ((knockbackState > 0 && knockbackState < 11) && player.airAttackState == 2) {
+		// If player is in spike
+			var zDiff = player.zsp - zsp;	//Enemy below player returns positive value
+			if (zDiff < 128 && zDiff > 12) {
+				xVel = 0;
+				player.freezeTimer = 2;
+				enemyHealth -= 10;
+			    enemyState = 7;            // Go directly to knockdown
+				spikeFlag = 1;             // Mark that we’re spiked
+				bounceFactor = .75;
+				knockbackForce = -45;      // Negative => forcibly shoot downward
+				knockbackDist = 0;         // No horizontal push, or set how you like
+				knockbackState = 0;        // Reset the sub-state so it re-initializes
+				freezeTimer = 2;           // So it goes immediately
+				comboTimer = 0;
+			} else {
+				hitflag = 0;
+			}
+		} else {
+			hitflag = 0;
 		}
+
+	// If enemy is on their feet
+	} else if (enemyState != 7) {
+		// If player is in combo attack
+		if (actionstate == 3) {
+			player.freezeTimer = 4;
+			enemyHealth -= 20;
+		    enemyState = 6;
+			comboTimer = 0;
+		    freezeTimer = 30;
+			// If player is in combo attack
+			if (player.image_index >= 22 && player.image_index < 23) {
+				attackStack = 5;
+			}
+		} else if (player.airAttackState == 1) {
+		// If player is in air attack 1
+			var zDiff = player.zsp - zsp;	//Enemy below player returns positive value
+			if (zDiff < 144) {
+				player.freezeTimer = 8;
+				enemyHealth -= 10;
+				airkickFlag = 1;
+			    enemyState = 6;
+				comboTimer = 0;
+			    freezeTimer = 30;
+			} else {
+				hitflag = 0;
+			}
+		} else if (player.airAttackState == 2) {
+		// If player is in spike
+			var zDiff = player.zsp - zsp;	//Enemy below player returns positive value
+			if (zDiff < 272) {
+				player.freezeTimer = 2;
+				enemyHealth -= 10;
+			    enemyState = 7;            // Go directly to knockdown
+				spikeFlag = 1;             // Mark that we’re spiked
+				bounceFactor = .75;
+				knockbackForce = -30;      // Negative => forcibly shoot downward
+				knockbackDist = 0;         // No horizontal push, or set how you like
+				knockbackState = 0;        // Reset the sub-state so it re-initializes
+				freezeTimer = 2;           // So it goes immediately
+				comboTimer = 0;
+			} else {
+				hitflag = 0;
+			}
+		}
+	} else {
+		hitflag = 0;
 	}
 }
 
@@ -192,6 +332,7 @@ if (enemyState == 6) {
 	    image_index = 1;
 	} else if (attackStack >= 4) {
 		enemyState = 7;
+		freezeTimer = 0;
 		image_index = 0;
 		attackStack = 0;
 	}
@@ -201,24 +342,39 @@ if (enemyState == 6) {
 if (enemyState == 7) {
 	sprite_index = spriteArray[charIndex][2];
     image_speed = 0;
+	if (freezeTimer > 0) {
+	    freezeTimer--;
+		exit;
+	}
 	knockbackTimer += 1;
     // Initial/mid-air knockback setup
     if (knockbackState == 0) {
-	    // Set knockback direction based on player position
 	    knockbackDir = (x > obj_beatEmUp_player.x) ? 1 : -1;
 
-	    xVel = 12 * knockbackDir; 
-	    zVel = 12;  // Max Z height
+		if (knockbackForce == 0 && knockbackDist == 0) {
+		    xVel = 12 * knockbackDir; 
+		    zVel = 12;  // Max Z height
+		} else {
+			xVel = knockbackDist * knockbackDir; 
+		    zVel = knockbackForce;  
+		}
+		
+		if (spikeFlag == 1) {
+            xVel = 0; // or maybe a small horizontal push
+            zVel = knockbackForce; // e.g. -12
+        }
 
 	    knockbackState = 1;
 	// First Bounce
 	} else if (knockbackState == 1) {
-		if (knockbackTimer <= 15) {
+		if (knockbackTimer <= 15 && bounceCount == 0) {
 		    image_index = 2;
-		} else if (knockbackTimer <= 60){
-			image_index = 3;
-		} else {
+		} else if (knockbackTimer <= 30){
 			image_index = 5;
+			var dirIndex = (dirOffset - 1) / -2;
+			mask_index = maskArray[0][dirIndex];
+		} else {
+			image_index = 3;
 		}
 	    x += xVel;
 	    zsp += zVel;
@@ -244,11 +400,14 @@ if (enemyState == 7) {
 		
 	    if (zsp <= 0) {
 	        zsp = 0;
+			knockbackTimer = 0;
+			bounceCount += 1;
 	        knockbackState = 2;
 	    }
 	// Following bounces
 	} else if (knockbackState == 2) {
 	    // Start a smaller bounce
+		bounceFactor = .5;
 	    zVel = -zVel * bounceFactor;  // e.g. 50% of previous
 	    if (abs(zVel) < 2) {
 	        // If the bounce is too small, skip to “slide”
@@ -273,8 +432,14 @@ if (enemyState == 7) {
 			} else {
 				enemyState = 13;
 			} 
+			spikeFlag = 0;
+			knockbackForce = 0;
+			knockbackDist = 0;
 			knockbackTimer = 0;
 	        knockbackState = 0;
+			bounceFactor= 0.5;
+			bounceCount = 0;
+			mask_index = maskArray[1];
 		}
 	// Collide with walls
 	} else if (knockbackState == 11) {
@@ -286,11 +451,16 @@ if (enemyState == 7) {
 	    shakeTimer += 1;
 	    if (shakeTimer % 2 == 0) { 
 	        image_xscale = -image_xscale; 
+			if (mask_index == spr_beatEmUp_lrgEnemyCollision) {
+			    mask_index = spr_beatEmUp_lrgEnemyCollision2;
+			} else {
+				mask_index = spr_beatEmUp_lrgEnemyCollision;
+			}
 	    }
 	    // When freezeTimer runs out, flip velocity and resume
 	    if (freezeTimer <= 0) {
 	        // Reverse velocity to bounce back
-	        xVel = -edgeSlamOldVel;
+	        xVel = -edgeSlamOldVel * 1.1;
 
 	        // Ensure movement direction is properly reversed
 	        knockbackDir = sign(xVel);
@@ -301,7 +471,6 @@ if (enemyState == 7) {
 	    }
 	}
 }
-
 
 
 // Wait when player is stacked with enemies
@@ -470,7 +639,6 @@ if ((enemyState > 0 && enemyState < 5) || enemyState == 10) {
 }
 
 // Get grabbed
-
 if (enemyState == 12) {
 	image_speed = 0;
 	x = obj_beatEmUp_player.x;
@@ -490,38 +658,40 @@ if (enemyState == 12) {
 				sprite_index = spriteArray[charIndex][2];
 				image_index = 2;
 				enemyState = 7;
+				enemyHealth -= 30;
+				knockbackForce = 19;
+				knockbackDist = 3;
 			}
 		}
 	}
 	
 	if (obj_beatEmUp_player.grabAnim == 1) {
 	    if (obj_beatEmUp_player.image_index == 4) {
+			enemyHealth -= 1;
 			zsp = 8;
 		} else {
 			zsp = 0;
 		}
 	}
 	if (obj_beatEmUp_player.grabAnim == 2) {
-	    if (obj_beatEmUp_player.image_index == 4) {
-			zsp = 8;
-		} else {
-			zsp = 0;
-		}
 		if (obj_beatEmUp_player.image_index == 13) {
 		    freezeTimer = 0;
 			x += 24 * -dirOffset;
 			sprite_index = spriteArray[charIndex][2];
 			image_index = 2;
+			enemyHealth -= 30;
 			enemyState = 7;
+			knockbackForce = 18;
+			knockbackDist = 18;
 		}
 	}
 }
 
 
-
 //Death
 if (enemyHealth <= 0 && enemyState != 7 && enemyState != 13) {
     enemyState = 7;
+	freezeTimer = 0;
 }
 
 if (enemyState == 13) {

@@ -27,5 +27,5 @@ instance_create_layer(x, y, "Instances", obj_beatEmUp_enemyNode, {
 		enemyCount: 1, 
 		charIndexArray: [0],
 		spawnSide: [-1],
-		spawnPoint: [1]
+		spawnPoint: [0]
 	});

@@ -35,18 +35,14 @@ if (useGamepad) {
     var haxis = gamepad_axis_value(0, gp_axislh);
     var vaxis = gamepad_axis_value(0, gp_axislv);
 
-    // Instead of booleans, store the raw analog values:
-    analog_x = (abs(haxis) > deadzone) ? haxis : 0;
-    analog_y = (abs(vaxis) > deadzone) ? vaxis : 0;
+    // Deadzone
+    analogX = (abs(haxis) > deadzone) ? haxis : 0;
+    analogY = (abs(vaxis) > deadzone) ? vaxis : 0;
 
     key_jump   = gamepad_button_check_pressed(0, gp_face1);
     key_attack = gamepad_button_check_pressed(0, gp_face3);
     key_block  = gamepad_button_check(0, gp_face2);
     key_super  = gamepad_button_check_pressed(0, gp_face4);
-
-    // Maybe for “facing,” check if analog_x > 0.2 or < -0.2
-    if (analog_x > 0.2)  directionOffset = 1;
-    if (analog_x < -0.2) directionOffset = -1;
 } else {
     // Keyboard/Mouse controls (existing logic):
     key_right = keyboard_check(ord("D"));
@@ -61,33 +57,65 @@ if (useGamepad) {
 
 // If you want to set directionOffset for BOTH keyboard & gamepad:
 if (actionstate < 2 || actionstate == 4) {
-    if (key_left)  directionOffset = -1;
-    if (key_right) directionOffset = 1;
+	if (useGamepad) {
+	    if (analogX > 0)  directionOffset = 1;
+		if (analogX < 0) directionOffset = -1;
+	} else {
+		if (key_right) directionOffset = 1;
+		if (key_left)  directionOffset = -1;
+	}
 }
 	
 ////////////////////////////////// Actionstate 0 - Still
 
-if (((!keyboard_check(ord ("W")) && !keyboard_check(ord ("A")) && !keyboard_check(ord ("S")) && !keyboard_check(ord ("D"))) || (key_up && key_down) || (key_left && key_right)) && (actionstate < 2 || (actionstate = 4 && !key_block))) {
-	sprite_index = charArray[0,playerChar];
-	if (hsp != 0 || vsp != 0) {
-		hsp *= .7;
-		vsp *= .7;
 
-		if (hsp > 0 && hsp < 1 ) || (hsp < 0 && hsp > -1) {
-			hsp = 0;
+if (actionstate < 2 || (actionstate = 4 && !key_block)) {
+	if (useGamepad) {
+		if (analogX == 0 && analogY == 0) {
+			sprite_index = charArray[0,playerChar];
+				if (hsp != 0 || vsp != 0) {
+					hsp *= .7;
+					vsp *= .7;
+
+					if (hsp > 0 && hsp < 1 ) || (hsp < 0 && hsp > -1) {
+						hsp = 0;
+					}
+					if (vsp > 0 && vsp < 1 ) || (vsp < 0 && vsp > -1) {
+						vsp = 0;
+					}
+				}
+				actionstate = 0;
 		}
-		if (vsp > 0 && vsp < 1 ) || (vsp < 0 && vsp > -1) {
-			vsp = 0;
+	} else {
+		if ((!keyboard_check(ord ("W")) && !keyboard_check(ord ("A")) 
+		&& !keyboard_check(ord ("S")) && !keyboard_check(ord ("D"))) 
+		|| (key_up && key_down) || (key_left && key_right)) {
+		    sprite_index = charArray[0,playerChar];
+			if (hsp != 0 || vsp != 0) {
+				hsp *= .7;
+				vsp *= .7;
+
+				if (hsp > 0 && hsp < 1 ) || (hsp < 0 && hsp > -1) {
+					hsp = 0;
+				}
+				if (vsp > 0 && vsp < 1 ) || (vsp < 0 && vsp > -1) {
+					vsp = 0;
+				}
+			}
+			actionstate = 0;
 		}
 	}
-	actionstate = 0;
+}
+
+if (actionstate == 0) {
+    image_speed = 1;
 }
 	
 	
 ////////////////////////////////// Actionstate 1 - Walking
 
 var isDigitalMove = key_left || key_right || key_up || key_down;
-var isAnalogMove  = (abs(analog_x) > 0.2) || (abs(analog_y) > 0.2);
+var isAnalogMove  = (abs(analogX) > 0.2) || (abs(analogY) > 0.2);
 
 if ((isDigitalMove || isAnalogMove) && (actionstate < 2 || (actionstate == 4 && !key_block))) {
 	actionstate = 1;
@@ -97,17 +125,11 @@ if ((isDigitalMove || isAnalogMove) && (actionstate < 2 || (actionstate == 4 && 
 
 if (actionstate == 1) {
 	sprite_index = charArray[1, playerChar];
-
 	// 1) If the analog stick is being pushed, do analog movement
-	if (abs(analog_x) > 0.2 || abs(analog_y) > 0.2) {
-	    // Scale your horizontal & vertical speeds by analog magnitude
-	    hsp = analog_x * hspMaxWalk;
-	    vsp = analog_y * vspMaxWalk;
-	}
-	else
-	{
-	    // 2) Otherwise, do the original "digital" logic for keyboard
-	    //     (unchanged from your old code)
+	if (abs(analogX) > 0.2 || abs(analogY) > 0.2) {
+	    hsp = analogX * hspMaxWalk;
+	    vsp = analogY * vspMaxWalk;
+	} else {
 	    if ((key_right || key_left) && (hspWalk < hspMaxWalk)) {
 	        hspWalk += 0.5;
 	    }
@@ -130,21 +152,10 @@ if (actionstate == 1) {
 	}
 }
 
-	
-	
 ////////////////////////////////// Actionstate 2 - Jumping
-
-	
-if (keyboard_check_released(vk_space) || (actionstate = 2 || actionstate = 14)) && jumpStatus = 1 {
-	jumpStatus = 2;
-		
-}
-		
-if (keyboard_check_pressed(vk_space) && actionstate != 2 && actionstate != 14) {
-	jumpStatus = 1;
-}
 	
 if (key_jump && actionstate != 2 && actionstate != 14 && actionstate != 3 && actionstate != 7 && jumpStatus < 2 ) { 
+	jumpStatus = 2;
 	hspJump = hsp;
 	hsp = 0;
 	vspJump = vsp;
@@ -173,24 +184,16 @@ if (actionstate == 2) {
 			zspJump = zspMaxJump;
 		}
 		zsp += zspJump;
-			
+		
 		//move horizontally
-		if key_right && (abs(hspJump) < hspMaxJump) {
+		if ((!useGamepad && key_right) || (useGamepad && analogX > 0)) && (abs(hspJump) < hspMaxJump) {
 			hspJump += .6;
 		}
-		if key_left && (abs(hspJump) < hspMaxJump) {
+		if ((!useGamepad && key_left) || (useGamepad && analogX < 0)) && (abs(hspJump) < hspMaxJump) {
 			hspJump -= .6;
 		}
 		hsp = hspJump;
-	
-		//move forward and backward
-		if key_up && (abs(vspJump) < vspMaxJump) {
-			vspJump -= .6;
-		}
-		if key_down && (abs(vspJump) < vspMaxJump) {
-			vspJump += .6;
-		}
-		vsp = vspJump;
+		vsp = 0;
 	}
 }
 	
@@ -223,6 +226,15 @@ if (actionstate == 3) {
 		case 6:
 		case 12:
 		case 17:
+			if (key_attack) {
+				if (directionOffset == 1 && ((!useGamepad && key_left) || (useGamepad && analogX < 0))) {
+					backAttackState = 1;
+				} else if (directionOffset == -1 && ((!useGamepad && key_right) || (useGamepad && analogX > 0))) {
+					backAttackState = -1;
+				} else {
+				attackQueue = 1;
+				}
+			}
 			if (backAttackState != 0) {
 				attackQueue = 0;
 				actionstate = 11;
@@ -248,9 +260,9 @@ if (actionstate == 3) {
 			backAttackState = 0;
 		default:
 			if (key_attack) {
-				if (directionOffset == 1 && key_left) {
+				if (directionOffset == 1 && ((!useGamepad && key_left) || (useGamepad && analogX < 0))) {
 					backAttackState = 1;
-				} else if (directionOffset == -1 && key_right) {
+				} else if (directionOffset == -1 && ((!useGamepad && key_right) || (useGamepad && analogX > 0))) {
 					backAttackState = -1;
 				} else {
 				attackQueue = 1;
@@ -292,12 +304,31 @@ if (sprite_index = charArray[3,playerChar] && key_attack && jumpStatus == 2 && (
 	// Forward Air Attack
 	//if (key_left || key_right || key_up || key_down) {
 		if (actionstate == 2 || (actionstate == 14 )) {
-			image_index = 3;
-			image_speed = 1;
-			airAttackState = 1;
+			if (useGamepad) {
+			    if (analogY > .7 && abs(analogX) < .3) {
+				    airAttackState = 2;
+					sprite_index = charArray[8, playerChar];
+					image_index = 0;
+					image_speed = 1;
+				} else {
+					image_index = 3;
+					image_speed = 1;
+					airAttackState = 1;
+				}
+			} else {
+				if (!key_down) {
+				    image_index = 3;
+					image_speed = 1;
+					airAttackState = 1;
+				} else {
+					airAttackState = 2;
+					sprite_index = charArray[8, playerChar];
+					image_index = 0;
+					image_speed = 1;
+				}
+			}
 		}
 
-			
 		if playerChar = 2 {
 			if (!instance_exists(obj_beatEmUp_PlayerRobotSmoke)) {
 				instance_create_layer(x,y,"Instances",obj_beatEmUp_PlayerRobotSmoke);
@@ -351,13 +382,13 @@ if (actionstate == 4) {
 ////////////////////////////////// Actionstate 7 - Grab
 
 if (actionstate == 7) {
-	
 	image_speed = 0;
 	hsp = 0;
 	vsp = 0;
 	var currentForward = grabForwardState;
 	if (key_attack && grabBack == 0 && grabAnim == 0) {
-		if ((directionOffset == -1 && key_right) || (directionOffset == 1 && key_left)) {
+		if (!useGamepad && ((directionOffset == -1 && key_right) || (directionOffset == 1 && key_left)))
+		|| (useGamepad && ((directionOffset == -1 && analogX > 0) || (directionOffset == 1 && analogX < 0))) {
 			grabBack = 1;
 			grabTimer = 0;
 			sprite_index = charArray[7,playerChar];
@@ -560,7 +591,6 @@ if (actionstate == 10) {
 			zsp += zVel;
 			// Gravity
 			zVel -= zGravity;
-
 			// Check edge-of-screen collision
 			var viewX = camera_get_view_x(view_camera[0]);
 			var viewW = camera_get_view_width(view_camera[0]);
@@ -579,12 +609,13 @@ if (actionstate == 10) {
 
 			// If we are close to the ground
 			if (zsp < 4) {
-				image_index = 4; // Example sub-image for "almost landing"
+				image_index = 4; // almost landed
 			}
 
 			// Once we actually pass “0” or below, we land
 			if (zsp <= 0) {
 				zsp = 0;
+				knockbackTimer = 0;
 				knockbackState = 2; // Next bounce logic
 			}
 			break;
@@ -647,23 +678,16 @@ if (actionstate == 11) {
     sprite_index = charArray[5, playerChar]; 
     image_speed = 1;
     
-    // If the player is pressing attack during the back attack, mark the queue.
     if (key_attack) {
         attackQueue = 1;
     }
     
-    // When the back attack animation finishes…
     if (image_index >= image_number - 1) {
-        // If the player is still holding backward relative to their facing,
-        // flip the combo’s original direction.
-        if (((directionOffset == 1 && key_left) || (directionOffset == -1 && key_right))) {
-            directionOffset *= -1;
-        }
-        
-        // *** Reset the combo timer so state 3 sees comboTimer==0 ***
+		if ((!useGamepad && ((directionOffset == 1 && key_left) || (directionOffset == -1 && key_right)))
+		|| (useGamepad && ((directionOffset == 1 && analogX < 0) || (directionOffset == -1 && analogX > 0)))) {
+	        directionOffset *= -1;
+	    }
         comboTimer = 0;
-        
-        // Transition back to the combo state, resuming at the saved frame.
         actionstate = 3;
         backAttackState = 0;
         image_speed = 0;
@@ -671,8 +695,6 @@ if (actionstate == 11) {
         image_index = returnIndex - 1;
     }
 }
-
-
 
 ////////////////////////////////// Actionstate 14 - Falling
 
@@ -697,41 +719,46 @@ if (actionstate == 14) {
 		}
 			
 		//move horizontally
-		if key_right && (abs(hspJump) < hspMaxJump)
+		if ((!useGamepad && key_right) || (useGamepad && analogX > 0)) && (abs(hspJump) < hspMaxJump)
 			{
 			hspJump += .6;
 			}
-		if key_left && (abs(hspJump) < hspMaxJump)
+		if ((!useGamepad && key_left) || (useGamepad && analogX < 0)) && (abs(hspJump) < hspMaxJump)
 			{
 			hspJump -= .6;
 			}
-			hsp = hspJump;
-		
-		//move forward and backward
-		if key_up && (abs(vspJump) < vspMaxJump) {
-			vspJump -= .6;
-		}
-		if key_down && (abs(vspJump) < vspMaxJump) {
-			vspJump += .6;
-		}
-		vsp = vspJump;
+		hsp = hspJump;
+		vsp = 0;
 	
 		//drop from jump height
 		zspJump += 1;
 	
 		if zspJump > 24
 			{zspJump = 24;}
+			
+		if (key_down && zsp > 0) {
+            // Tweak the “-1” to taste for how strong the fast-fall is
+            fastFall += 1; 
+        }
 		
-		zsp -= zspJump;
+		if (airAttackState == 2) {
+		    fastFall = 24;
+		}
+		
+		zsp -= zspJump + (fastFall);
 	}
 
 	if landingTimer > 0 {
+		sprite_index = charArray[3, playerChar]; 
+		image_index = 7;
+		fastFall = 0;
 		jumpStatus = 3;
 		landingTimer -= 1;
 	}
 	if landingTimer == 1 {
 		airAttackState = 0;
 		landingTimer = 0;
+		jumpStatus = 0;
 		actionstate = 0;
 	} 
 		
@@ -843,12 +870,16 @@ if (shadowSize < .5) {
 	shadowSize = .5;
 }
 
-if ((actionstate == 2 || actionstate == 14) && airAttackState == 1 && image_index >= 5 && jumpStatus == 2) {
-	image_index = 5;
-	image_speed = 0;
+if ((actionstate == 2 || actionstate == 14) && jumpStatus == 2) {
+	if (airAttackState == 1 && image_index >= 5) {
+	    image_index = 5;
+		image_speed = 0;
+	} else if (airAttackState == 2 && image_index >= 2) {
+		image_index = 2;
+		image_speed = 0;
+	}
+	
 }
-
-
 
 // Check if player's hurtbox collides with enemy's hitbox
 var enemyInst = instance_place(x, y, obj_beatEmUp_enemyHitbox);

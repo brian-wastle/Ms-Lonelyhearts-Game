@@ -1,7 +1,7 @@
 // Enemy Codes for charIndex
 // 0 - Yellowjacket
 // 1 - Yellowjacket w/ Knife
-depth = -1000
+depth = -1000;
 nodeState = 0; // Track state of node, similar to actionState and enemyState vars in those objects
 nodeStatus = 0; // Granular state tracking
 stateTimer = 0;
@@ -11,7 +11,7 @@ stateTimer = 0;
 // spawnSide; -1 for Left, 1 for Right, declared by control object on instantiation
 // spawnPoint[]; list of indexes to spawnPointArray, declared by control object on instantiation
 
-currentXViewCenter = view_get_xport(0) + (view_get_wport(0) / 2);
+currentXViewCenter = camera_get_view_x(view_camera[0]) + (camera_get_view_width(view_camera[0]) / 2);
 yViewCenter = 540; // Y view Center;
 
 spawnPointArray = [732, 800, 880, 950]; // Y spawn coordinates
@@ -26,8 +26,8 @@ function sortEnemiesByDistance(enemyArray) {
         return enemyArray;
     }
     array_sort(enemyArray, function(a, b) {
-        var distA = point_distance(a.x, a.y, obj_BeatEmUp_Player.x, obj_BeatEmUp_Player.y);
-        var distB = point_distance(b.x, b.y, obj_BeatEmUp_Player.x, obj_BeatEmUp_Player.y);
+        var distA = point_distance(a.x, a.y, obj_beatEmUp_player.x, obj_beatEmUp_player.y);
+        var distB = point_distance(b.x, b.y, obj_beatEmUp_player.x, obj_beatEmUp_player.y);
         return distA - distB;
     });
     return enemyArray;

@@ -12,19 +12,19 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"f28e2d75-81f0-4bd7-a021-25f9df49eb91","name":"f28e2d75-81f0-4bd7-a021-25f9df49eb91","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"a6e753c3-1fd1-4c81-9955-af1a05965e13","name":"a6e753c3-1fd1-4c81-9955-af1a05965e13","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"0dc02e26-372e-4bc5-bf9d-c390d285c74f","name":"0dc02e26-372e-4bc5-bf9d-c390d285c74f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"f56d9636-c4b0-40b1-bab6-0bed94968d5b","name":"f56d9636-c4b0-40b1-bab6-0bed94968d5b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"c526a06e-4012-448e-b02d-f09bf6381a88","name":"c526a06e-4012-448e-b02d-f09bf6381a88","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"d9a2ec19-59f9-414a-967c-fa2af7d660ff","name":"d9a2ec19-59f9-414a-967c-fa2af7d660ff","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"6b84daf5-0bd9-42e6-8972-9cd5e119d2c7","name":"6b84daf5-0bd9-42e6-8972-9cd5e119d2c7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"0fc61363-9e91-4583-ad8f-e00684c5c910","name":"0fc61363-9e91-4583-ad8f-e00684c5c910","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"2595927c-8d8b-4fbb-acd0-2c688e03a580","name":"2595927c-8d8b-4fbb-acd0-2c688e03a580","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"402189af-8a48-4344-aa54-f199b83a659f","name":"402189af-8a48-4344-aa54-f199b83a659f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"a3df65a1-f2e6-41d1-ba7c-6ae0546c7d9c","name":"a3df65a1-f2e6-41d1-ba7c-6ae0546c7d9c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"46ccdf17-c924-46d7-a4d7-26f4e91fd053","name":"46ccdf17-c924-46d7-a4d7-26f4e91fd053","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":136,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"b491e1b9-2488-4d5d-a2d7-3b9960ced87e","blendMode":0,"displayName":"default","isLocked":false,"name":"b491e1b9-2488-4d5d-a2d7-3b9960ced87e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"3a637655-01a2-4699-bd64-aea7491de29f","blendMode":0,"displayName":"default","isLocked":false,"name":"3a637655-01a2-4699-bd64-aea7491de29f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_RunAndGun_PlayerRunDownRight",
   "nineSlice":null,
@@ -74,23 +74,23 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f28e2d75-81f0-4bd7-a021-25f9df49eb91","path":"sprites/spr_RunAndGun_PlayerRunDownRight/spr_RunAndGun_PlayerRunDownRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9c94250d-e5a6-441b-a281-5c22a8069e5e","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6b84daf5-0bd9-42e6-8972-9cd5e119d2c7","path":"sprites/spr_RunAndGun_PlayerRunDownRight/spr_RunAndGun_PlayerRunDownRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"15ec8aae-06a2-46a2-b5eb-6ce5dd013af0","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a6e753c3-1fd1-4c81-9955-af1a05965e13","path":"sprites/spr_RunAndGun_PlayerRunDownRight/spr_RunAndGun_PlayerRunDownRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3fc74cbb-8830-4fbb-a950-f82cee167421","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0fc61363-9e91-4583-ad8f-e00684c5c910","path":"sprites/spr_RunAndGun_PlayerRunDownRight/spr_RunAndGun_PlayerRunDownRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5775e023-a99d-4af5-9be5-940882ca0ab1","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0dc02e26-372e-4bc5-bf9d-c390d285c74f","path":"sprites/spr_RunAndGun_PlayerRunDownRight/spr_RunAndGun_PlayerRunDownRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"bc3a059f-0eed-421b-8fa1-22b274e42214","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2595927c-8d8b-4fbb-acd0-2c688e03a580","path":"sprites/spr_RunAndGun_PlayerRunDownRight/spr_RunAndGun_PlayerRunDownRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ceee5340-0954-4e3d-87f0-77c8855893fb","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f56d9636-c4b0-40b1-bab6-0bed94968d5b","path":"sprites/spr_RunAndGun_PlayerRunDownRight/spr_RunAndGun_PlayerRunDownRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"13331077-97eb-45c7-84e3-cb98d26dec8d","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"402189af-8a48-4344-aa54-f199b83a659f","path":"sprites/spr_RunAndGun_PlayerRunDownRight/spr_RunAndGun_PlayerRunDownRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4b4736c5-dd38-4cfa-974a-0c1c88c618c7","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c526a06e-4012-448e-b02d-f09bf6381a88","path":"sprites/spr_RunAndGun_PlayerRunDownRight/spr_RunAndGun_PlayerRunDownRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"749e3149-51a6-4bec-b9f5-efd0caa20371","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a3df65a1-f2e6-41d1-ba7c-6ae0546c7d9c","path":"sprites/spr_RunAndGun_PlayerRunDownRight/spr_RunAndGun_PlayerRunDownRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b62af206-753b-4068-9852-85ed7d9d7d6d","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d9a2ec19-59f9-414a-967c-fa2af7d660ff","path":"sprites/spr_RunAndGun_PlayerRunDownRight/spr_RunAndGun_PlayerRunDownRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e6083f99-dc24-4830-aa5f-46ddbbb445b2","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"46ccdf17-c924-46d7-a4d7-26f4e91fd053","path":"sprites/spr_RunAndGun_PlayerRunDownRight/spr_RunAndGun_PlayerRunDownRight.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e72c5138-cefe-4ea4-812a-cf8e058b2aec","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -23,6 +23,7 @@ zspMaxJump = 19;
 jumpStatus = 0;			// prevents character from jumping immediately on landing
 jumpBoost = 0;			// Upward velocity during jump
 landingTimer = 0;		// keeps player in landing position for a moment after falling 
+fastFall = 0;			// Track speed of fast fall
 shadowSize = 0;
 airAttackState = 0;		// whether jumping player is attacking, resets to 0 on landing.
 attackStack = 0;		// track progress towards knockdown state
@@ -71,6 +72,7 @@ key_jump = keyboard_check(vk_space);
 key_block = keyboard_check_pressed(vk_shift);
 key_attack = mouse_check_button_pressed(mb_left);
 key_super = mouse_check_button_pressed(mb_right);
+deadzone = 0;
 
 // Player sprite arrays
 
@@ -98,12 +100,14 @@ charArray[6,2] = -1;
 charArray[7,0] = spr_BeatEmUp_PlayerGirlGrabRear;
 charArray[7,1] = -1;
 charArray[7,2] = -1;
-
+charArray[8,0] = spr_BeatEmUp_PlayerGirlSpike;
+charArray[8,1] = -1;
+charArray[8,2] = -1;
 
 // Gamepad
 
-analog_x = 0;
-analog_y = 0;
+analogX = 0;
+analogY = 0;
 
 // Initialize attack hitboxes
 
