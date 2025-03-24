@@ -46,7 +46,6 @@ if !gamepad_is_connected(global.pad) {
 			} else if (xOffset = -1) {
 				directionOffset = "left";
 			}
-		
 		}
 	}
 
@@ -165,42 +164,45 @@ if !gamepad_is_connected(global.pad) {
 
 
 	////////////////////////////////// Actionstate 2 - Jumping
-
 	
-	if (keyboard_check_released(vk_space) || (actionstate = 2 || actionstate = 14)) && jump_status = 1 {
+	// Fall through floor
+	if (actionstate = 0 && key_fall && key_jump && !collision_line(x - 12, y + 1, x + 12, y + 1, obj_RunAndGun_ParentOverlay, 1, 1) ) {
+		y += 8;
+		actionstate = 14;
+	}
+
+	if (keyboard_check_released(vk_space) || (actionstate == 2 || actionstate == 14)) && jump_status == 1 {
 		jump_status = 2;
 	}
-		
-	
+
+
 	if keyboard_check_pressed(vk_space) && actionstate != 2 && actionstate != 14 && actionstate != 3 {
 		jump_status = 1;
 	}
-	
+
 	//collision check
-	if ((collision_line(x-10, y + 1, x+10, y + 1, obj_RunAndGun_ParentPlatform, 1, 1) && (!key_fall || (key_left || key_right)) && key_jump && jump_status < 2)) { 
+	if ((collision_line(x - 10, y + 1, x + 10, y + 1, obj_RunAndGun_ParentPlatform, 1, 1) || collision_line(x - 12, y + 1, x + 12, y + 1, obj_RunAndGun_ParentOverlay, 1, 1)) && (!key_fall || (key_left || key_right)) && key_jump && jump_status < 2) { 
 
 		hsp_jump = hsp;
 		hsp = 0;
-	
+
 	actionstate = 2;
 	}
-	
-	
-	
+
 	if (actionstate = 2) {	
 		vsp_max_height -= 2;
-	
+
 		//move vertically	
 		if (key_jump) && (vsp_jump > vsp_max_jump) {
 			vsp_jump = vsp_max_jump;
 		}
-		
+
 		vsp = vsp_jump;
-	
+
 		if vsp_jump < vsp_max_jump {
 			vsp_jump = vsp_max_jump;
 		}
-			
+
 		//move horizontally
 		if key_right && (abs(hsp_jump) < hsp_max_jump) {
 			hsp_jump += .6;
@@ -210,7 +212,7 @@ if !gamepad_is_connected(global.pad) {
 		}
 		hsp = hsp_jump;
 
-		
+
 		//stop horizontal movement when no key press left or right
 		if (!key_right && !key_left) || (key_right && key_left) {
 			if (hsp_jump != 0) {
@@ -302,11 +304,10 @@ if !gamepad_is_connected(global.pad) {
 
 	////////////////////////////////// Actionstate 14 - Falling
 
-	if (actionstate = 0 && key_fall && key_jump) {
-		y += 1;
-	}
-
-	if ((actionstate = 2 && !key_jump) || (vsp_max_height < vsp_max_jump) || (actionstate < 2 && !collision_line(x-10, y + 1, x+10, y + 1, obj_RunAndGun_ParentPlatform, 1, 1))) {
+	
+	if ((actionstate = 2 && !key_jump) || (vsp_max_height < vsp_max_jump) || (actionstate < 2 
+	&& !collision_line(x - 12, y + 1, x + 12, y + 1, obj_RunAndGun_ParentOverlay, 1, 1) 
+	&& !collision_line(x - 10, y + 1, x + 10, y + 1, obj_RunAndGun_ParentPlatform, 1, 1))) {
 		vsp_max_height = 0;	
 		actionstate = 14;
 		if hsp_jump = 0 && hsp_walk != 0 {
@@ -318,8 +319,10 @@ if !gamepad_is_connected(global.pad) {
 			}
 		}
 	}
+	
 
-	if actionstate = 14 {
+
+	if actionstate == 14 {
 	
 		//move horizontally
 		if key_right && (abs(hsp_jump) < hsp_max_jump)
@@ -351,7 +354,7 @@ if !gamepad_is_connected(global.pad) {
 			}
 		}
 	
-		if (directionOffset = "right" || directionOffset = "left") {
+		if (directionOffset == "right" || directionOffset == "left") {
 			sprite_index = spr_RunAndGun_PlayerJump;
 			if (xOffset = 1) {
 				bulletDir = 0;
@@ -359,15 +362,15 @@ if !gamepad_is_connected(global.pad) {
 				bulletDir = 180;
 			}
 		}
-		if (directionOffset = "up") {
+		if (directionOffset == "up") {
 			sprite_index = spr_RunAndGun_PlayerJumpUp;
 			bulletDir = 90;
 		}
-		if (directionOffset = "down") {
+		if (directionOffset == "down") {
 			sprite_index = spr_RunAndGun_PlayerJumpDown;
 			bulletDir = 270;
 		}
-		if (directionOffset = "downRight" || directionOffset = "downLeft") {
+		if (directionOffset == "downRight" || directionOffset == "downLeft") {
 			sprite_index = spr_RunAndGun_PlayerJumpDownRight;
 			if (xOffset = 1) {
 				bulletDir = 315;
@@ -375,7 +378,7 @@ if !gamepad_is_connected(global.pad) {
 				bulletDir = 225;
 			}
 		}
-		if (directionOffset = "upRight" || directionOffset = "upLeft") {
+		if (directionOffset == "upRight" || directionOffset == "upLeft") {
 			sprite_index = spr_RunAndGun_PlayerJumpUpRight;
 			if (xOffset = 1) {
 				bulletDir = 45;
@@ -394,60 +397,109 @@ if !gamepad_is_connected(global.pad) {
 
 
 
+	// Check if player bumps head on ceiling
+	if ((actionstate == 2 || actionstate == 14) && collision_line(x - 12, y + vsp - 140, x + 12, y + vsp - 140, obj_RunAndGun_ParentOverlay, 1, 1)) {
+		while (!collision_line(x - 12, y - 140, x + 12, y - 140, obj_RunAndGun_ParentOverlay, 1, 1)) {
+			y -= 1;
+		}
+		vsp_max_height = 0;	
+		actionstate = 14;
+		vsp = 0;
+		vsp_jump = 0;
+	}
+	
+	// Check left and right collision with overlay
+	if ((actionstate == 2 || actionstate == 14) && 
+    (collision_line(x + hsp - 14, y - 20 , x + hsp - 14, y - 120, obj_RunAndGun_ParentOverlay, 1, 1) 
+    || collision_line(x + hsp + 14, y - 20 , x + hsp + 14, y - 120, obj_RunAndGun_ParentOverlay, 1, 1)))
+	{
+	    var onepixel = sign(hsp);
+    
+	    while (!collision_line(x + onepixel + (onepixel * 14), y, x + onepixel + (onepixel * 14), y - 140, obj_RunAndGun_ParentOverlay, 1, 1)) {
+	        x += onepixel;
+	    }
+    
+	    hsp = 0;
+	    hsp_jump = 0;
+	}
+
 	////////////////////////////////// End Step  //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	if (!key_jump && actionstate != 2 && actionstate != 14) {
-		jump_status = 0;
+	    jump_status = 0;
 	}
 
+	// Apply gravity
 	vsp = vsp + grv;
+
+	// Handle vertical movement
 	if (vsp > 0) {
-		var onepixel = sign(vsp) //up = -1, down = 1.
-		if (collision_line(x-10, y + vsp, x+10, y + vsp, obj_RunAndGun_ParentPlatform, 1, 1) && !collision_line(x-10, y-1, x+10, y-1, obj_RunAndGun_ParentPlatform, 1, 1) && (actionstate != 2)) {
-			while (!collision_line(x-10, y + onepixel, x+10, y + onepixel, obj_RunAndGun_ParentPlatform, 1, 1)) {
-				y = y + onepixel;
+	    var onepixel = sign(vsp); // up = -1, down = 1
+
+	    // Check if falling onto a platform
+	    if ((collision_line(x-10, y + vsp, x+10, y + vsp, obj_RunAndGun_ParentPlatform, 1, 1) 
+	        && !collision_line(x-10, y-1, x+10, y-1, obj_RunAndGun_ParentPlatform, 1, 1) 
+	        && actionstate != 2)) {
+        
+	        // Move player down until exactly on the platform
+	        while (!collision_line(x-10, y + onepixel, x+10, y + onepixel, obj_RunAndGun_ParentPlatform, 1, 1)) {
+	            y = y + onepixel;
+			}
+	        vsp = 0;
+		}
+	}
+
+	if (vsp != 0) {
+	    var onepixel = sign(vsp);
+
+		// Check if colliding with a wall or floor object
+		if (collision_line(x - 12, y + vsp, x + 12, y + vsp, obj_RunAndGun_ParentOverlay, 1, 1)) {
+			while (!collision_line(x - 12, y + onepixel, x + 12, y + onepixel, obj_RunAndGun_ParentOverlay, 1, 1)) {
+				y += onepixel;
 			}
 			vsp = 0;
 		}
 	}
 
-	if x - 20 < camera_get_view_x(view_camera[0]) {
-		x = camera_get_view_x(view_camera[0]) + 20;
-	}
-
-
-
-	/*
-	if (place_meeting(x,y+vsp,obj_RunAndGun_ParentPlatform) && (actionstate != 2)) {
-		//move as close as we can
-		while (!place_meeting(x,y+onepixel,obj_RunAndGun_ParentPlatform)) {
-			y = y + onepixel;
-		}
-		vsp = 0;
-	}
-	*/
-
+	// Apply vertical movement
 	y = y + vsp;
-	
-	
+
+
 	//////////////////////////// Actionstate 1 - Walking
 
-	if (actionstate = 1) {
-		if hsp_walk > hsp_max_walk {
-			hsp_walk = hsp_max_walk;
-		}
+	if (actionstate == 1) {
+	    if (hsp_walk > hsp_max_walk) {
+	        hsp_walk = hsp_max_walk;
+	    }
+	    if (hsp > hsp_max_walk) {
+	        hsp = hsp_max_walk;
+	    }
+	    if (hsp < -hsp_max_walk) {
+	        hsp = -hsp_max_walk;
+	    }
 	
-		if hsp > hsp_max_walk {
-			hsp = hsp_max_walk;
+
+		if (hsp != 0) {
+		    var onepixel = sign(hsp);
+
+		    // If the player is about to collide in the horizontal direction
+		    if (collision_line(x + hsp - 14, y - 1, x + hsp + 14, y - 1, obj_RunAndGun_ParentOverlay, 1, 1)) {
+		        // Move as close as possible without colliding
+		        while (!collision_line(x + onepixel - 14, y - 1, x + onepixel + 14, y - 1, obj_RunAndGun_ParentOverlay, 1, 1)) {
+		            x += onepixel;
+		        }
+		        hsp = 0;
+		    }
 		}
-		if hsp < (hsp_max_walk * -1) {
-			hsp = hsp_max_walk * -1;
-		}
-	
 	}
-	x = x + hsp;		
+
+	// Apply horizontal movement
+	x += hsp;	
 	
-	
+	// Ensure player doesn’t go past the left camera boundary
+	if (x - 20 < camera_get_view_x(view_camera[0])) {
+	    x = camera_get_view_x(view_camera[0]) + 20;
+	}
 	/////////////////////////// Actionstate 2 - Jumping
 	
 	if (collision_line(x-10, y + 1, x+10, y + 1, obj_RunAndGun_ParentPlatform, 1, 1) && !collision_line(x-10, y, x+10, y, obj_RunAndGun_ParentPlatform, 1, 1) && actionstate = 2) { 
@@ -458,7 +510,8 @@ if !gamepad_is_connected(global.pad) {
 
 	/////////////////////////// Actionstate 14 - Falling
 		
-	if (collision_line(x-10, y + 1, x+10, y + 1, obj_RunAndGun_ParentPlatform, 1, 1) && !collision_line(x-10, y, x+10, y, obj_RunAndGun_ParentPlatform, 1, 1) && actionstate = 14) { 
+	if (actionstate == 14 && ((collision_line(x-10, y + 1, x+10, y + 1, obj_RunAndGun_ParentPlatform, 1, 1) && !collision_line(x-10, y - 1, x+10, y - 1, obj_RunAndGun_ParentPlatform, 1, 1))  
+	|| (collision_line(x - 12, y, x + 12, y, obj_RunAndGun_ParentOverlay, 1, 1) && !collision_line(x - 12, y - 1, x + 12, y - 1, obj_RunAndGun_ParentOverlay, 1, 1)))) { 
 		actionstate = 0;
 		hsp_jump = 0;
 		vsp_jump= 0;
@@ -594,7 +647,7 @@ if gamepad_is_connected(global.pad) {
 	////////////////////////////////// Actionstate 2 - Jumping
 
 	
-	if (gamepad_button_check_released(global.pad,gp_face1) || (actionstate = 2 || actionstate = 14)) && jump_status = 1 {
+	if (gamepad_button_check_released(global.pad,gp_face1) || (actionstate == 2 || actionstate == 14)) && jump_status == 1 {
 		jump_status = 2;
 	}
 		
@@ -720,7 +773,7 @@ if gamepad_is_connected(global.pad) {
 	}
 	
 
-	if actionstate = 14 {
+	if actionstate == 14 {
 	
 		if haxis > 0 && (abs(hsp_jump) < hsp_max_jump) {
 			direction = 0;
@@ -808,7 +861,7 @@ if gamepad_is_connected(global.pad) {
 	
 	/////////////////////////// Actionstate 2 - Jumping
 	
-	if (collision_line(x-10, y + 1, x+10, y + 1, obj_RunAndGun_ParentPlatform, 1, 1) && !collision_line(x-10, y, x+10, y, obj_RunAndGun_ParentPlatform, 1, 1) && actionstate = 2) { 
+	if (collision_line(x-10, y + 1, x+10, y + 1, obj_RunAndGun_ParentPlatform, 1, 1) && !collision_line(x-10, y, x+10, y, obj_RunAndGun_ParentPlatform, 1, 1) && actionstate == 2) { 
 		actionstate = 0;
 		hsp_jump = 0;
 		vsp_jump = 0;
@@ -816,7 +869,7 @@ if gamepad_is_connected(global.pad) {
 
 	/////////////////////////// Actionstate 14 - Falling
 		
-	if (collision_line(x-10, y + 1, x+10, y + 1, obj_RunAndGun_ParentPlatform, 1, 1) && !collision_line(x-10, y, x+10, y, obj_RunAndGun_ParentPlatform, 1, 1) && actionstate = 14) { 
+	if (collision_line(x-10, y + 1, x+10, y + 1, obj_RunAndGun_ParentPlatform, 1, 1) && !collision_line(x-10, y, x+10, y, obj_RunAndGun_ParentPlatform, 1, 1) && actionstate == 14) { 
 		actionstate = 0;
 		hsp_jump = 0;
 		vsp_jump= 0;
@@ -831,3 +884,6 @@ if gamepad_is_connected(global.pad) {
 if (y > camera_get_view_height(view_camera[0])) {
 	y = 200;
 }
+
+x = round(x / 4) * 4;
+y = round(y / 4) * 4;

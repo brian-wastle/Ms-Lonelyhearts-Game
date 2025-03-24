@@ -23,7 +23,7 @@
   ],
   "name":"spr_RunAndGun_PlayerStillUp",
   "nineSlice":null,
-  "origin":9,
+  "origin":7,
   "parent":{
     "name":"still",
     "path":"folders/Sprites/runAndGun/playerChar/still.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":27,
+    "xorigin":28,
     "yorigin":160,
   },
   "swatchColours":null,

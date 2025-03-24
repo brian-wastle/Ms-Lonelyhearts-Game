@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"beatEmUp",
-    "path":"folders/Sprites/beatEmUp.yy",
+    "name":"collisionMasks",
+    "path":"folders/Sprites/beatEmUp/collisionMasks.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

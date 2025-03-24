@@ -6,3 +6,7 @@ var y2 = y1 + camera_get_view_height(currentView);
 if (!point_in_rectangle( x, y, x1, y1, x2, y2)) { 
 	instance_destroy(); 
 }
+
+if (place_meeting(x,y,obj_RunAndGun_ParentOverlay)) {
+	instance_destroy();
+}
