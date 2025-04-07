@@ -1,0 +1,13 @@
+Level,Scene,Box,Page,Character,Dialogue
+1,1,1,1,Boss,"Who is {r}that{/r}?"
+1,1,1,1,Boss,"Get her out of here!"
+1,1,1,2,Boss,"I'll handle her {r}myself{/r}."
+1,1,2,1,Boss,"Who is {r}that{/r}?"
+1,1,2,1,Boss,"Get her out of here!"
+1,1,2,2,Boss,"I'll handle her {r}myself{/r}."
+1,2,1,1,Boss,"Who is {r}that{/r}?"
+1,2,1,1,Boss,"Get her out of here!"
+1,2,1,2,Boss,"I'll handle her {r}myself{/r}."
+1,2,2,1,Boss,"Who is {r}that{/r}?"
+1,2,2,1,Boss,"Get her out of here!"
+1,2,2,2,Boss,"I'll handle her {r}myself{/r}."

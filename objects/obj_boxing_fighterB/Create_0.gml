@@ -25,7 +25,6 @@ instance_create_layer(0,0,"Spotlight", obj_boxing_spotlight);
 
 //slide
 slideTime = .4;
-curvePosition = 0;
 channel = animcurve_get_channel(curve_boxing_fighterB_slide, 0);
 cx = 0;
 cy = 0;

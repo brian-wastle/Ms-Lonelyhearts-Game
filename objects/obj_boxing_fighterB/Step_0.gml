@@ -55,7 +55,7 @@ if (!gamepad_is_connected(global.pad)) {
 
 //Slide state
 if (playerState = 1) {
-	cx += 1 / (slideTime * fps);
+	cx += 1 / (slideTime * 60);
     cy = animcurve_channel_evaluate(channel, cx);
 	speed = cy * targetDir * .6;
 	if ( cx > .8 && obj_boxing_fighterB_armControl.queueState = "closed") {
