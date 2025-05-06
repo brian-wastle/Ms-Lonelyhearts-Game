@@ -39,7 +39,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_arcadeShooter_sneakShotgunBody",
     "autoRecord":true,
     "backdropHeight":768,
@@ -75,30 +75,14 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"82e933c1-b28e-46e6-adde-4c56c0e964cd","path":"sprites/spr_arcadeShooter_sneakShotgunBody/spr_arcadeShooter_sneakShotgunBody.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2ef0d573-611b-41ea-94a7-a2e949ebd0d3","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7d165617-670f-4496-9b6b-a740e8126b67","path":"sprites/spr_arcadeShooter_sneakShotgunBody/spr_arcadeShooter_sneakShotgunBody.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3b6b2d8a-1ea9-44a8-a742-e0d65695cf5b","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8b87509d-5284-4751-a715-f7c1a31548dc","path":"sprites/spr_arcadeShooter_sneakShotgunBody/spr_arcadeShooter_sneakShotgunBody.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"696bb1ca-dc20-4484-a6ff-8941b81b4e92","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1a4aef0a-40b1-4192-9fe6-ac1d9cb78b8d","path":"sprites/spr_arcadeShooter_sneakShotgunBody/spr_arcadeShooter_sneakShotgunBody.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"462f7d88-d969-4feb-b795-826fba59cda9","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"24235f10-9168-4f13-acde-8a8f63bb49fa","path":"sprites/spr_arcadeShooter_sneakShotgunBody/spr_arcadeShooter_sneakShotgunBody.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4b61cb3c-ea22-4d11-b50e-3f476f4c3361","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"07d4c68c-3043-42e6-9538-fd61cb334953","path":"sprites/spr_arcadeShooter_sneakShotgunBody/spr_arcadeShooter_sneakShotgunBody.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"06b2fc7c-4995-48fe-878e-687d94ecb2c5","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c644f93f-8780-47e0-ba25-e34e7c9a2787","path":"sprites/spr_arcadeShooter_sneakShotgunBody/spr_arcadeShooter_sneakShotgunBody.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c6c8d619-cdb3-406a-be76-43e27dbdcf9d","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"be42be6e-d1c1-41e7-9b9d-57891a1932a7","path":"sprites/spr_arcadeShooter_sneakShotgunBody/spr_arcadeShooter_sneakShotgunBody.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"97e8792b-94e6-431a-82d7-a14da991f174","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"82e933c1-b28e-46e6-adde-4c56c0e964cd","path":"sprites/spr_arcadeShooter_sneakShotgunBody/spr_arcadeShooter_sneakShotgunBody.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"2ef0d573-611b-41ea-94a7-a2e949ebd0d3","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"7d165617-670f-4496-9b6b-a740e8126b67","path":"sprites/spr_arcadeShooter_sneakShotgunBody/spr_arcadeShooter_sneakShotgunBody.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3b6b2d8a-1ea9-44a8-a742-e0d65695cf5b","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"8b87509d-5284-4751-a715-f7c1a31548dc","path":"sprites/spr_arcadeShooter_sneakShotgunBody/spr_arcadeShooter_sneakShotgunBody.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"696bb1ca-dc20-4484-a6ff-8941b81b4e92","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"1a4aef0a-40b1-4192-9fe6-ac1d9cb78b8d","path":"sprites/spr_arcadeShooter_sneakShotgunBody/spr_arcadeShooter_sneakShotgunBody.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"462f7d88-d969-4feb-b795-826fba59cda9","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"24235f10-9168-4f13-acde-8a8f63bb49fa","path":"sprites/spr_arcadeShooter_sneakShotgunBody/spr_arcadeShooter_sneakShotgunBody.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"4b61cb3c-ea22-4d11-b50e-3f476f4c3361","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"07d4c68c-3043-42e6-9538-fd61cb334953","path":"sprites/spr_arcadeShooter_sneakShotgunBody/spr_arcadeShooter_sneakShotgunBody.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"06b2fc7c-4995-48fe-878e-687d94ecb2c5","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"c644f93f-8780-47e0-ba25-e34e7c9a2787","path":"sprites/spr_arcadeShooter_sneakShotgunBody/spr_arcadeShooter_sneakShotgunBody.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"c6c8d619-cdb3-406a-be76-43e27dbdcf9d","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"be42be6e-d1c1-41e7-9b9d-57891a1932a7","path":"sprites/spr_arcadeShooter_sneakShotgunBody/spr_arcadeShooter_sneakShotgunBody.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"97e8792b-94e6-431a-82d7-a14da991f174","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

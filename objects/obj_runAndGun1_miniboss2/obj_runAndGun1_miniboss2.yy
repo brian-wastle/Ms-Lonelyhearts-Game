@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_runAndGun1_minibossABC",
-    "path":"sprites/spr_runAndGun1_minibossABC/spr_runAndGun1_minibossABC.yy",
+    "name":"spr_runAndGun1_bossIdleTransition",
+    "path":"sprites/spr_runAndGun1_bossIdleTransition/spr_runAndGun1_bossIdleTransition.yy",
   },
   "spriteMaskId":null,
   "visible":true,

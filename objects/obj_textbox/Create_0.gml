@@ -15,12 +15,12 @@ channelAppear		= animcurve_get_channel(curve_textbox_size, "curve1"); // textbox
 channelDisappear	= animcurve_get_channel(curve_textbox_size, "curve2"); // textbox bg disappear animation
 cx					= 0;
 cy					= 0;
-textboxSpeed		= 8;		// speed settings, must be a natural number > 0
+textboxSpeed		= 5;		// must be a natural number > 0, 1 being the fastest
 
 // Character attributes
 charColor			= #000000;
 charEffect			= "";
-charSpeed			= 4;
+charSpeed			= 3;
 
 // Typewriter effect and resizing textbox (states 0 and 1)
 totalPages			= 0;
@@ -36,7 +36,14 @@ boxSpeed			= 5;		// rate at which textbox appears and disappears
 currentXSize		= 0;		// current x size as box expands/retracts
 currentYSize		= 0;		// current y size as box expands/retracts
 
-
+// Textbox effects
+pointerIndex		= 0;		// image_index for pointer at corner of textbox
+pointerDelay		= 0;
+skipDelay			= 0;		// short delay to prevent text skipping
+shrinkSpeed			= 3;		// speed at which textbox disappears
+wavyArray			= [0, 4, 0, -4];
+wavyIndex			= 0;
+wavyDelay			= 0;
 
 
 if (!is_struct(boxData)) {			// Passed in by obj_textEngine
@@ -47,11 +54,11 @@ function charData(
 	_charIndex	= 0,
 	_color		= #000000,
 	_effect		= 0,
-	_charSpeed	= 4,
+	_charSpeed	= 3,
 	_lineIndex	= 0,
 	_xOffset	= 0
 ) constructor {
-	color		= _color;								// Character color
+	charColor		= _color;								// Character color
 	effect		= _effect;							// Character effects from parser
 	charSpeed	= _charSpeed;						// Delay (in frames) for typewriter effect
 	charIndex	= _charIndex;						// Image index for alphanumeric character
@@ -61,6 +68,8 @@ function charData(
 
 charToIndex = function(_char) {
 	var c = string_upper(_char);
+	show_debug_message("'" + _char + "' : " + string(ord(_char)));
+
 	if (ord(c) >= ord("A") && ord(c) <= ord("Z")) return ord(c) - ord("A"); // if char is between a and z, return index 0-25
 	switch (c) {
 	    case ".": return 26;
@@ -87,15 +96,15 @@ charToIndex = function(_char) {
 
 charToOffset = function(_charIndex, _currentLineOffset) {
 	static fontWidthArray = [
-		16, 16, 16, 16,
-		12, 12, 20, 16,
-		12, 16, 16, 16,
-		20, 16, 16, 16,
+		12, 12, 12, 12, // "a", "b", "c", "d", ...
+		8, 8, 16, 12,
+		4, 12, 12, 8,
 		20, 16, 12, 12,
-		16, 20, 24, 20,
-		16, 16,  4,  8,
+		16, 12, 12, 12,
+		12, 12, 20, 12,
+		12, 12,  8,  8, // "y", "z", ".", "," ...
 		4,  8,  8,  8,
-		8,  4,  8, 12,
+		4,  4,  8, 12, // " ", "'", "1", "2" ...
 		12, 12, 12, 12,
 		12, 12, 12, 12, 0
 	];
@@ -130,7 +139,7 @@ getLinePixelLength = function() {
 		    var thisLineKey = lineKeys[j];
 			var thisLineData = thisPageData[$ thisLineKey];
 			var lastCharIndex = array_length(thisLineData) - 1;
-			var thisLength = thisLineData[lastCharIndex].xOffset;
+			var thisLength = thisLineData[lastCharIndex].xOffset + 12;
 			longestLength = thisLength > longestLength ? thisLength: longestLength;
 		}
 	}
@@ -176,9 +185,6 @@ getPageData = function(_currentPage) {
 				var currentChar = string_char_at(thisDialog, i + 1); // String indexes begin at 1
 				//Convert lower case letters to upper case
 				var ordChar = ord(currentChar);
-				if (ord(ordChar) >= ord("a") && ord(ordChar) <= ord("z")) {
-				    
-				}
 				currentChar = string_upper(currentChar);
 
 				// Parse effects
@@ -192,7 +198,7 @@ getPageData = function(_currentPage) {
 							charSpeed = real(currentChar);
 							break;
 					    case "R": // Red Text
-					        charColor = "#41111A";
+					        charColor = #50181f;
 					        break;
 						case "G": // Green Text
 					        charColor = #002E16;
@@ -217,13 +223,13 @@ getPageData = function(_currentPage) {
 						case "7":
 						case "8":
 						case "9":
-							charSpeed = 4;
+							charSpeed = 3;
 							break;
 						case "R":
 						case "G":
 						case "B":
 						case "V":
-					        charColor = #000000;
+					        charColor = c_black;
 					        break;
 					    case "W":
 							charEffect = "";
@@ -243,9 +249,9 @@ getPageData = function(_currentPage) {
 					}
 				    continue;
 				}
-				if (i > 0) {
-				    currentLineOffset += 4;
-				}
+				
+				currentLineOffset += 4;
+				
 				
 				var charIndex = charToIndex(currentChar);
 				currentLineOffset = charToOffset(charIndex, currentLineOffset);
@@ -268,4 +274,4 @@ charCount = getCharCount(currentPage, currentLine);
 typeDelay = getTypeDelay();
 lineLength = getLinePixelLength();
 totalWidth = lineLength + 64;
-totalHeight = (totalLines * 28) + 64;
+totalHeight = (totalLines * 36) + 36;

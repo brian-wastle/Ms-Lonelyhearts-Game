@@ -40,7 +40,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_twinStickShooter_dogDroidJumpUp",
     "autoRecord":true,
     "backdropHeight":768,
@@ -76,33 +76,15 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"498cb24d-88b0-4de4-a9f4-2e509e67df28","path":"sprites/spr_twinStickShooter_dogDroidJumpUp/spr_twinStickShooter_dogDroidJumpUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"97c7762c-1581-4ae5-b94d-742d2464878f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"696c3e39-133f-4955-85ec-16e6d3565a93","path":"sprites/spr_twinStickShooter_dogDroidJumpUp/spr_twinStickShooter_dogDroidJumpUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d89d2a0b-eec2-4554-9488-10c4aa80c00e","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8f099381-c7bd-4851-8faf-9994d56f8e80","path":"sprites/spr_twinStickShooter_dogDroidJumpUp/spr_twinStickShooter_dogDroidJumpUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"f6262c18-df34-4cdd-8d34-c48bf5483e83","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c3ec5e11-2f1b-4619-ae98-a89a85f8a3ff","path":"sprites/spr_twinStickShooter_dogDroidJumpUp/spr_twinStickShooter_dogDroidJumpUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"59943773-5f9d-40d1-b5d1-e9c12c6bb865","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"96c537e4-2dba-4aa5-a508-c79528fdabd4","path":"sprites/spr_twinStickShooter_dogDroidJumpUp/spr_twinStickShooter_dogDroidJumpUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"79a3ea01-8ef5-4f0a-b994-bb050360873d","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"953d7b74-e259-4d8d-b3df-d18944b2ace3","path":"sprites/spr_twinStickShooter_dogDroidJumpUp/spr_twinStickShooter_dogDroidJumpUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e5534da5-9b24-4b5a-8d36-034964cfce92","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"60256753-8a6f-4586-b489-73b2c1189596","path":"sprites/spr_twinStickShooter_dogDroidJumpUp/spr_twinStickShooter_dogDroidJumpUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"82a1cb9a-c895-42e8-bd8b-1300d6a4f7dc","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ac2706f8-7d62-432f-aec1-dad0803cc2c7","path":"sprites/spr_twinStickShooter_dogDroidJumpUp/spr_twinStickShooter_dogDroidJumpUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"450e37ae-e4fd-468b-84c8-03635f87940b","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e5af8fe2-9ae5-4fed-b127-c2a7f3731d57","path":"sprites/spr_twinStickShooter_dogDroidJumpUp/spr_twinStickShooter_dogDroidJumpUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"118c6d8a-5722-4497-9f34-39ef2630c7b0","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"498cb24d-88b0-4de4-a9f4-2e509e67df28","path":"sprites/spr_twinStickShooter_dogDroidJumpUp/spr_twinStickShooter_dogDroidJumpUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"97c7762c-1581-4ae5-b94d-742d2464878f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"696c3e39-133f-4955-85ec-16e6d3565a93","path":"sprites/spr_twinStickShooter_dogDroidJumpUp/spr_twinStickShooter_dogDroidJumpUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"d89d2a0b-eec2-4554-9488-10c4aa80c00e","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"8f099381-c7bd-4851-8faf-9994d56f8e80","path":"sprites/spr_twinStickShooter_dogDroidJumpUp/spr_twinStickShooter_dogDroidJumpUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"f6262c18-df34-4cdd-8d34-c48bf5483e83","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"c3ec5e11-2f1b-4619-ae98-a89a85f8a3ff","path":"sprites/spr_twinStickShooter_dogDroidJumpUp/spr_twinStickShooter_dogDroidJumpUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"59943773-5f9d-40d1-b5d1-e9c12c6bb865","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"96c537e4-2dba-4aa5-a508-c79528fdabd4","path":"sprites/spr_twinStickShooter_dogDroidJumpUp/spr_twinStickShooter_dogDroidJumpUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"79a3ea01-8ef5-4f0a-b994-bb050360873d","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"953d7b74-e259-4d8d-b3df-d18944b2ace3","path":"sprites/spr_twinStickShooter_dogDroidJumpUp/spr_twinStickShooter_dogDroidJumpUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"e5534da5-9b24-4b5a-8d36-034964cfce92","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"60256753-8a6f-4586-b489-73b2c1189596","path":"sprites/spr_twinStickShooter_dogDroidJumpUp/spr_twinStickShooter_dogDroidJumpUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"82a1cb9a-c895-42e8-bd8b-1300d6a4f7dc","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ac2706f8-7d62-432f-aec1-dad0803cc2c7","path":"sprites/spr_twinStickShooter_dogDroidJumpUp/spr_twinStickShooter_dogDroidJumpUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"450e37ae-e4fd-468b-84c8-03635f87940b","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"e5af8fe2-9ae5-4fed-b127-c2a7f3731d57","path":"sprites/spr_twinStickShooter_dogDroidJumpUp/spr_twinStickShooter_dogDroidJumpUp.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"118c6d8a-5722-4497-9f34-39ef2630c7b0","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

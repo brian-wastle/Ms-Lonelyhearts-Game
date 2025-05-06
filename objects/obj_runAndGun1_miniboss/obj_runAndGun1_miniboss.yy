@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_runAndGun1_bossIntro",
-    "path":"sprites/spr_runAndGun1_bossIntro/spr_runAndGun1_bossIntro.yy",
+    "name":"spr_runAndGun1_grabMic",
+    "path":"sprites/spr_runAndGun1_grabMic/spr_runAndGun1_grabMic.yy",
   },
   "spriteMaskId":null,
   "visible":true,

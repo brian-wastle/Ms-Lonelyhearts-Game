@@ -6,6 +6,8 @@
 //11 - Take Damage
 //13 - Die
 //14 - Fall x
+if (obj_camera.cutscene == false) {
+    // code here
 
 
 if !gamepad_is_connected(global.pad) {
@@ -887,3 +889,8 @@ if (y > camera_get_view_height(view_camera[0])) {
 
 x = round(x / 4) * 4;
 y = round(y / 4) * 4;
+
+
+} else if (obj_camera.cutscene == true) {
+sprite_index = spr_RunAndGun_PlayerStill;
+}

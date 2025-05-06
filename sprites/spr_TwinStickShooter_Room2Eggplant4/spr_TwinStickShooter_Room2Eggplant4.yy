@@ -37,7 +37,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_TwinStickShooter_Room2Eggplant4",
     "autoRecord":true,
     "backdropHeight":768,
@@ -73,24 +73,12 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4bf7228e-ff97-4d96-969b-a17188a87f34","path":"sprites/spr_TwinStickShooter_Room2Eggplant4/spr_TwinStickShooter_Room2Eggplant4.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5c5aaebc-5340-4781-9327-07e23428fa16","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8659a657-b008-4595-b382-1b476bd416ca","path":"sprites/spr_TwinStickShooter_Room2Eggplant4/spr_TwinStickShooter_Room2Eggplant4.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b48c9136-0441-4da7-9e81-11daf994923d","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3ef3f06b-4290-4bdb-b08f-5cdd57f7b23f","path":"sprites/spr_TwinStickShooter_Room2Eggplant4/spr_TwinStickShooter_Room2Eggplant4.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"191180ee-aa9c-4bf4-8c75-d7961e78dfa2","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"23e257ab-a124-4e14-8c58-4d99bfb1e708","path":"sprites/spr_TwinStickShooter_Room2Eggplant4/spr_TwinStickShooter_Room2Eggplant4.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"36c25433-df2e-4dbe-a8cb-4ccea9d08fa4","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"45a64b58-e3f0-41c1-a78e-5ac9f8118bc5","path":"sprites/spr_TwinStickShooter_Room2Eggplant4/spr_TwinStickShooter_Room2Eggplant4.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0f65693d-c039-4bdb-a779-1e1f5fb2d995","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c3afaa9a-5364-4e9a-8242-12448345a3b1","path":"sprites/spr_TwinStickShooter_Room2Eggplant4/spr_TwinStickShooter_Room2Eggplant4.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e3f08254-2462-49f5-af9e-83ad7a0a4161","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"4bf7228e-ff97-4d96-969b-a17188a87f34","path":"sprites/spr_TwinStickShooter_Room2Eggplant4/spr_TwinStickShooter_Room2Eggplant4.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"5c5aaebc-5340-4781-9327-07e23428fa16","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"8659a657-b008-4595-b382-1b476bd416ca","path":"sprites/spr_TwinStickShooter_Room2Eggplant4/spr_TwinStickShooter_Room2Eggplant4.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"b48c9136-0441-4da7-9e81-11daf994923d","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"3ef3f06b-4290-4bdb-b08f-5cdd57f7b23f","path":"sprites/spr_TwinStickShooter_Room2Eggplant4/spr_TwinStickShooter_Room2Eggplant4.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"191180ee-aa9c-4bf4-8c75-d7961e78dfa2","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"23e257ab-a124-4e14-8c58-4d99bfb1e708","path":"sprites/spr_TwinStickShooter_Room2Eggplant4/spr_TwinStickShooter_Room2Eggplant4.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"36c25433-df2e-4dbe-a8cb-4ccea9d08fa4","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"45a64b58-e3f0-41c1-a78e-5ac9f8118bc5","path":"sprites/spr_TwinStickShooter_Room2Eggplant4/spr_TwinStickShooter_Room2Eggplant4.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"0f65693d-c039-4bdb-a779-1e1f5fb2d995","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"c3afaa9a-5364-4e9a-8242-12448345a3b1","path":"sprites/spr_TwinStickShooter_Room2Eggplant4/spr_TwinStickShooter_Room2Eggplant4.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"e3f08254-2462-49f5-af9e-83ad7a0a4161","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

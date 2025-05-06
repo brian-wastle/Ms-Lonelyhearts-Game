@@ -41,7 +41,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_beatEmUp_yjacketIdleKnife",
     "autoRecord":true,
     "backdropHeight":768,
@@ -77,36 +77,16 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"01077945-c808-4c57-8ff6-bc5610d4e8dc","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e86f4cde-8891-4421-beaf-10160f1362c8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"caa99267-fd44-4b98-a650-8b20208e72c9","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"62cd6385-89c5-450b-84ab-7954648ade15","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6436f249-fbf1-4ca8-941d-080a33968d6e","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2872aa26-50b0-4320-b620-849276155e8e","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c3d06c56-f897-4810-82e8-7ec4c5d02f3c","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e615a990-b9f8-4b46-99bf-7250f4618f5b","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"db79b162-fa9a-46b6-80b4-dd5ab29d09ae","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6cde391a-1064-4055-bc2e-c80f2bb5ad99","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8d9c894c-f08d-490f-8d58-7dba3de10495","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"757df5eb-3449-497e-a53f-061f5a60c3f6","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d855bc44-fd0a-47c3-b536-5ee1f781fced","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c9af4d86-6f0f-4c0e-a042-1f5e1545ef59","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"34735ac7-c3a2-42a0-a661-4a97da89c8bd","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3a5b06b3-ebc7-4ef0-aa05-b430ffdc4be5","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1dd98117-3883-4507-9a3a-50425bee8834","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"49de2c20-e1e3-4293-9f0e-e63c1a651494","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"37934170-8d11-476c-97a5-b95f1ca2157b","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b1f80bff-3412-43c8-b7ce-efafe0e7a8c2","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"01077945-c808-4c57-8ff6-bc5610d4e8dc","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"e86f4cde-8891-4421-beaf-10160f1362c8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"caa99267-fd44-4b98-a650-8b20208e72c9","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"62cd6385-89c5-450b-84ab-7954648ade15","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"6436f249-fbf1-4ca8-941d-080a33968d6e","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"2872aa26-50b0-4320-b620-849276155e8e","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"c3d06c56-f897-4810-82e8-7ec4c5d02f3c","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"e615a990-b9f8-4b46-99bf-7250f4618f5b","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"db79b162-fa9a-46b6-80b4-dd5ab29d09ae","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"6cde391a-1064-4055-bc2e-c80f2bb5ad99","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"8d9c894c-f08d-490f-8d58-7dba3de10495","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"757df5eb-3449-497e-a53f-061f5a60c3f6","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"d855bc44-fd0a-47c3-b536-5ee1f781fced","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"c9af4d86-6f0f-4c0e-a042-1f5e1545ef59","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"34735ac7-c3a2-42a0-a661-4a97da89c8bd","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3a5b06b3-ebc7-4ef0-aa05-b430ffdc4be5","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"1dd98117-3883-4507-9a3a-50425bee8834","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"49de2c20-e1e3-4293-9f0e-e63c1a651494","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"37934170-8d11-476c-97a5-b95f1ca2157b","path":"sprites/spr_beatEmUp_yjacketIdleKnife/spr_beatEmUp_yjacketIdleKnife.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"b1f80bff-3412-43c8-b7ce-efafe0e7a8c2","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

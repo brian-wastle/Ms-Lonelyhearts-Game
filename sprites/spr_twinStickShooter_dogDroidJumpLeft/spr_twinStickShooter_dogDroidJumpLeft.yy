@@ -40,7 +40,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_twinStickShooter_dogDroidJumpLeft",
     "autoRecord":true,
     "backdropHeight":768,
@@ -76,33 +76,15 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"adf657c8-66d9-4197-8562-ae324524f4ff","path":"sprites/spr_twinStickShooter_dogDroidJumpLeft/spr_twinStickShooter_dogDroidJumpLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"dbb546f9-d864-4716-bc76-02173c968d46","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fa6c25e0-093f-4372-b3ae-ed141daac865","path":"sprites/spr_twinStickShooter_dogDroidJumpLeft/spr_twinStickShooter_dogDroidJumpLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6bee3844-1846-4c4d-9315-71719df0530a","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"50896ec3-a57f-498d-aa06-5c7d1d43413a","path":"sprites/spr_twinStickShooter_dogDroidJumpLeft/spr_twinStickShooter_dogDroidJumpLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"485ed615-596f-49b1-847a-5caf55f98431","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"62558f90-5227-4a45-b4ae-db07f353d0f4","path":"sprites/spr_twinStickShooter_dogDroidJumpLeft/spr_twinStickShooter_dogDroidJumpLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"65a6336f-f203-421c-ba7f-68c2cfdf3707","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"56930c82-6a92-475e-a9dc-bbfb231893cc","path":"sprites/spr_twinStickShooter_dogDroidJumpLeft/spr_twinStickShooter_dogDroidJumpLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0ad41c66-2268-405e-9459-98ff9281da57","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"445cac69-243f-454d-bed4-e58ba0b05999","path":"sprites/spr_twinStickShooter_dogDroidJumpLeft/spr_twinStickShooter_dogDroidJumpLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"88bd0261-6ed9-4bcb-aa63-c9f6d5330feb","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7125e90a-5f45-4615-bcdb-adbf360ba05e","path":"sprites/spr_twinStickShooter_dogDroidJumpLeft/spr_twinStickShooter_dogDroidJumpLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"bf46adc0-b620-4c63-a6a3-ad8f14a33d74","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7fac1dce-bd92-40f5-8a6b-d387e027091b","path":"sprites/spr_twinStickShooter_dogDroidJumpLeft/spr_twinStickShooter_dogDroidJumpLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2e265ea7-944c-451b-a7dc-bc7cfa669c23","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7dabc4ea-8ac3-4c53-897a-fc5895d1e504","path":"sprites/spr_twinStickShooter_dogDroidJumpLeft/spr_twinStickShooter_dogDroidJumpLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"cb047257-de37-42ad-b783-0c84760338aa","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"adf657c8-66d9-4197-8562-ae324524f4ff","path":"sprites/spr_twinStickShooter_dogDroidJumpLeft/spr_twinStickShooter_dogDroidJumpLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"dbb546f9-d864-4716-bc76-02173c968d46","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"fa6c25e0-093f-4372-b3ae-ed141daac865","path":"sprites/spr_twinStickShooter_dogDroidJumpLeft/spr_twinStickShooter_dogDroidJumpLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"6bee3844-1846-4c4d-9315-71719df0530a","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"50896ec3-a57f-498d-aa06-5c7d1d43413a","path":"sprites/spr_twinStickShooter_dogDroidJumpLeft/spr_twinStickShooter_dogDroidJumpLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"485ed615-596f-49b1-847a-5caf55f98431","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"62558f90-5227-4a45-b4ae-db07f353d0f4","path":"sprites/spr_twinStickShooter_dogDroidJumpLeft/spr_twinStickShooter_dogDroidJumpLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"65a6336f-f203-421c-ba7f-68c2cfdf3707","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"56930c82-6a92-475e-a9dc-bbfb231893cc","path":"sprites/spr_twinStickShooter_dogDroidJumpLeft/spr_twinStickShooter_dogDroidJumpLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"0ad41c66-2268-405e-9459-98ff9281da57","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"445cac69-243f-454d-bed4-e58ba0b05999","path":"sprites/spr_twinStickShooter_dogDroidJumpLeft/spr_twinStickShooter_dogDroidJumpLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"88bd0261-6ed9-4bcb-aa63-c9f6d5330feb","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"7125e90a-5f45-4615-bcdb-adbf360ba05e","path":"sprites/spr_twinStickShooter_dogDroidJumpLeft/spr_twinStickShooter_dogDroidJumpLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"bf46adc0-b620-4c63-a6a3-ad8f14a33d74","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"7fac1dce-bd92-40f5-8a6b-d387e027091b","path":"sprites/spr_twinStickShooter_dogDroidJumpLeft/spr_twinStickShooter_dogDroidJumpLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"2e265ea7-944c-451b-a7dc-bc7cfa669c23","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"7dabc4ea-8ac3-4c53-897a-fc5895d1e504","path":"sprites/spr_twinStickShooter_dogDroidJumpLeft/spr_twinStickShooter_dogDroidJumpLeft.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"cb047257-de37-42ad-b783-0c84760338aa","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

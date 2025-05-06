@@ -41,7 +41,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_TwinStickShooter_Room2Cabbages2",
     "autoRecord":true,
     "backdropHeight":768,
@@ -77,36 +77,16 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8196cdb0-5957-4cda-b76f-c53ed2b6c995","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"93b4937e-75ac-43be-9f8f-194ad76e8013","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7abdc952-813e-4b2e-af6f-69b5192ad33b","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"cf264902-ea6f-48a7-91c2-43acda695ec6","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dca701b8-6ce7-407d-892e-964c504da491","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fe8b87e1-4337-4985-b8f3-27ab112f49a6","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"750f8e08-7839-4d48-9df8-b686ba1146aa","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e1cdf368-767a-4648-a754-bb7390d91d2f","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"107d8ae0-8d63-4e67-9159-43004ca4c2dd","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c6a025d9-b99e-47c7-9582-858196e2e1c5","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c10d3d96-3ae9-4c30-aecc-1498f219fe3b","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2d843b95-232f-4f9f-94ba-b5eaa48ed5ce","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ffc84355-7edc-4caa-9704-020f13697317","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"03039541-5440-4e6c-ae24-051fd5ecbcd4","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f3932d30-94a6-4b35-92fc-a6f16c972f1a","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"41c77baf-5a61-4b65-a7a4-878feb5465d8","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0d95b42c-97af-4d36-a976-66174f8de04d","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"456ceb12-a57d-48ab-b6fb-79cadc123486","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"98f2250d-6baa-40c9-a657-0de15a068358","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"50c4073d-bd9f-47d1-839e-78843ec624fb","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"8196cdb0-5957-4cda-b76f-c53ed2b6c995","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"93b4937e-75ac-43be-9f8f-194ad76e8013","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"7abdc952-813e-4b2e-af6f-69b5192ad33b","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"cf264902-ea6f-48a7-91c2-43acda695ec6","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"dca701b8-6ce7-407d-892e-964c504da491","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"fe8b87e1-4337-4985-b8f3-27ab112f49a6","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"750f8e08-7839-4d48-9df8-b686ba1146aa","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"e1cdf368-767a-4648-a754-bb7390d91d2f","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"107d8ae0-8d63-4e67-9159-43004ca4c2dd","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"c6a025d9-b99e-47c7-9582-858196e2e1c5","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"c10d3d96-3ae9-4c30-aecc-1498f219fe3b","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"2d843b95-232f-4f9f-94ba-b5eaa48ed5ce","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ffc84355-7edc-4caa-9704-020f13697317","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"03039541-5440-4e6c-ae24-051fd5ecbcd4","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"f3932d30-94a6-4b35-92fc-a6f16c972f1a","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"41c77baf-5a61-4b65-a7a4-878feb5465d8","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"0d95b42c-97af-4d36-a976-66174f8de04d","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"456ceb12-a57d-48ab-b6fb-79cadc123486","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"98f2250d-6baa-40c9-a657-0de15a068358","path":"sprites/spr_TwinStickShooter_Room2Cabbages2/spr_TwinStickShooter_Room2Cabbages2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"50c4073d-bd9f-47d1-839e-78843ec624fb","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

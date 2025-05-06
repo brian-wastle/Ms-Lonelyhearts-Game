@@ -39,7 +39,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_BeatEmUp_PlayerGirlGrabRear",
     "autoRecord":true,
     "backdropHeight":768,
@@ -75,30 +75,14 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9dee6de8-e682-415e-9780-5061c5313a27","path":"sprites/spr_BeatEmUp_PlayerGirlGrabRear/spr_BeatEmUp_PlayerGirlGrabRear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c6c068ff-c0fd-4688-a980-d17da80adf91","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"24fed3d1-b333-4bba-808c-6b915f4543f3","path":"sprites/spr_BeatEmUp_PlayerGirlGrabRear/spr_BeatEmUp_PlayerGirlGrabRear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3b04450c-df8c-4368-906d-0ccf67fd60cf","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fa3316f1-bc32-4b43-a8f4-80b89964c70e","path":"sprites/spr_BeatEmUp_PlayerGirlGrabRear/spr_BeatEmUp_PlayerGirlGrabRear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b51208b0-d70b-4f70-980b-dec3d46da8d8","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"72077694-99ff-4f90-b859-93888bbaede0","path":"sprites/spr_BeatEmUp_PlayerGirlGrabRear/spr_BeatEmUp_PlayerGirlGrabRear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"61650515-92bf-4f7c-a73c-fb2246237a6d","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"04eb1ecf-7322-4287-8b07-f05be91f3ee3","path":"sprites/spr_BeatEmUp_PlayerGirlGrabRear/spr_BeatEmUp_PlayerGirlGrabRear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fb7d7c97-e877-4057-bd3c-b3fab81a766b","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6e35f009-4039-494a-b244-7ec4d9af6773","path":"sprites/spr_BeatEmUp_PlayerGirlGrabRear/spr_BeatEmUp_PlayerGirlGrabRear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"af4f4951-3f90-4080-9bc8-1715f16faf31","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"aa58f370-dec9-4952-9453-082a92be6ef6","path":"sprites/spr_BeatEmUp_PlayerGirlGrabRear/spr_BeatEmUp_PlayerGirlGrabRear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"67790694-75b5-47bb-86d7-89946c5ec9cd","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"420eb8a0-483a-4693-bcac-392c268bcaae","path":"sprites/spr_BeatEmUp_PlayerGirlGrabRear/spr_BeatEmUp_PlayerGirlGrabRear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a3872528-45c0-493c-a9a7-100a6361406f","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"9dee6de8-e682-415e-9780-5061c5313a27","path":"sprites/spr_BeatEmUp_PlayerGirlGrabRear/spr_BeatEmUp_PlayerGirlGrabRear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"c6c068ff-c0fd-4688-a980-d17da80adf91","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"24fed3d1-b333-4bba-808c-6b915f4543f3","path":"sprites/spr_BeatEmUp_PlayerGirlGrabRear/spr_BeatEmUp_PlayerGirlGrabRear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3b04450c-df8c-4368-906d-0ccf67fd60cf","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"fa3316f1-bc32-4b43-a8f4-80b89964c70e","path":"sprites/spr_BeatEmUp_PlayerGirlGrabRear/spr_BeatEmUp_PlayerGirlGrabRear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"b51208b0-d70b-4f70-980b-dec3d46da8d8","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"72077694-99ff-4f90-b859-93888bbaede0","path":"sprites/spr_BeatEmUp_PlayerGirlGrabRear/spr_BeatEmUp_PlayerGirlGrabRear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"61650515-92bf-4f7c-a73c-fb2246237a6d","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"04eb1ecf-7322-4287-8b07-f05be91f3ee3","path":"sprites/spr_BeatEmUp_PlayerGirlGrabRear/spr_BeatEmUp_PlayerGirlGrabRear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"fb7d7c97-e877-4057-bd3c-b3fab81a766b","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"6e35f009-4039-494a-b244-7ec4d9af6773","path":"sprites/spr_BeatEmUp_PlayerGirlGrabRear/spr_BeatEmUp_PlayerGirlGrabRear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"af4f4951-3f90-4080-9bc8-1715f16faf31","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"aa58f370-dec9-4952-9453-082a92be6ef6","path":"sprites/spr_BeatEmUp_PlayerGirlGrabRear/spr_BeatEmUp_PlayerGirlGrabRear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"67790694-75b5-47bb-86d7-89946c5ec9cd","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"420eb8a0-483a-4693-bcac-392c268bcaae","path":"sprites/spr_BeatEmUp_PlayerGirlGrabRear/spr_BeatEmUp_PlayerGirlGrabRear.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"a3872528-45c0-493c-a9a7-100a6361406f","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

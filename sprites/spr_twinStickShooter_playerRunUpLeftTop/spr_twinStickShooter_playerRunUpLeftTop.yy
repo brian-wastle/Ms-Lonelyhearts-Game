@@ -39,7 +39,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_twinStickShooter_playerRunUpLeftTop",
     "autoRecord":true,
     "backdropHeight":768,
@@ -75,30 +75,14 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d2082c6c-d423-4cc9-afbe-1a9a88fb04df","path":"sprites/spr_twinStickShooter_playerRunUpLeftTop/spr_twinStickShooter_playerRunUpLeftTop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e4e9dabc-3491-43c1-83ef-71fe2f3a6980","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c4e0bef5-1512-4da0-8212-1943ba455d6a","path":"sprites/spr_twinStickShooter_playerRunUpLeftTop/spr_twinStickShooter_playerRunUpLeftTop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"beba056e-7413-438c-9d27-6ee66591ca49","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0914e330-06e9-4795-a37b-7e56b9050cd4","path":"sprites/spr_twinStickShooter_playerRunUpLeftTop/spr_twinStickShooter_playerRunUpLeftTop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4c3d1390-277c-4a32-a25f-ad223998c3cc","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1ee5c257-f42b-4a20-9c40-cc401574f9f9","path":"sprites/spr_twinStickShooter_playerRunUpLeftTop/spr_twinStickShooter_playerRunUpLeftTop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3aaf58ea-08d2-40da-acd0-51f7b3ae1b1a","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9f985498-f5f5-4465-a132-c5630805c3db","path":"sprites/spr_twinStickShooter_playerRunUpLeftTop/spr_twinStickShooter_playerRunUpLeftTop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b70f655b-292b-4672-b0f5-7fe2b071af23","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fb09119c-7235-4855-b582-386e59fb3c1f","path":"sprites/spr_twinStickShooter_playerRunUpLeftTop/spr_twinStickShooter_playerRunUpLeftTop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7aeb7c67-fcbf-4f70-b9dc-f6e8dcbdaa66","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b79922c5-9c77-452a-9437-c21258a4764e","path":"sprites/spr_twinStickShooter_playerRunUpLeftTop/spr_twinStickShooter_playerRunUpLeftTop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9675fc09-ef38-4a1e-88b3-7f8c59887892","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ff2ae28e-b512-4537-b47d-dd65f1fedd97","path":"sprites/spr_twinStickShooter_playerRunUpLeftTop/spr_twinStickShooter_playerRunUpLeftTop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"dba137b8-015a-4d8b-92cf-c44dc79f332a","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"d2082c6c-d423-4cc9-afbe-1a9a88fb04df","path":"sprites/spr_twinStickShooter_playerRunUpLeftTop/spr_twinStickShooter_playerRunUpLeftTop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"e4e9dabc-3491-43c1-83ef-71fe2f3a6980","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"c4e0bef5-1512-4da0-8212-1943ba455d6a","path":"sprites/spr_twinStickShooter_playerRunUpLeftTop/spr_twinStickShooter_playerRunUpLeftTop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"beba056e-7413-438c-9d27-6ee66591ca49","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"0914e330-06e9-4795-a37b-7e56b9050cd4","path":"sprites/spr_twinStickShooter_playerRunUpLeftTop/spr_twinStickShooter_playerRunUpLeftTop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"4c3d1390-277c-4a32-a25f-ad223998c3cc","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"1ee5c257-f42b-4a20-9c40-cc401574f9f9","path":"sprites/spr_twinStickShooter_playerRunUpLeftTop/spr_twinStickShooter_playerRunUpLeftTop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3aaf58ea-08d2-40da-acd0-51f7b3ae1b1a","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"9f985498-f5f5-4465-a132-c5630805c3db","path":"sprites/spr_twinStickShooter_playerRunUpLeftTop/spr_twinStickShooter_playerRunUpLeftTop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"b70f655b-292b-4672-b0f5-7fe2b071af23","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"fb09119c-7235-4855-b582-386e59fb3c1f","path":"sprites/spr_twinStickShooter_playerRunUpLeftTop/spr_twinStickShooter_playerRunUpLeftTop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"7aeb7c67-fcbf-4f70-b9dc-f6e8dcbdaa66","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"b79922c5-9c77-452a-9437-c21258a4764e","path":"sprites/spr_twinStickShooter_playerRunUpLeftTop/spr_twinStickShooter_playerRunUpLeftTop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"9675fc09-ef38-4a1e-88b3-7f8c59887892","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ff2ae28e-b512-4537-b47d-dd65f1fedd97","path":"sprites/spr_twinStickShooter_playerRunUpLeftTop/spr_twinStickShooter_playerRunUpLeftTop.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"dba137b8-015a-4d8b-92cf-c44dc79f332a","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

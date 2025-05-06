@@ -41,7 +41,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_arcadeShooter_threeByThreePlus",
     "autoRecord":true,
     "backdropHeight":768,
@@ -77,36 +77,16 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"428bb4e1-a2c0-46d1-9734-ae7f8c252833","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ee6b496b-8913-491b-9c69-335d8cdb763a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dbce9fa1-51da-4eea-a6c4-b0f8dafbfa57","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"311e494c-e324-4239-841e-60bd3f0afad6","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c2dfabf0-bba8-41e4-8c3d-15edfd7b50eb","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fa79f35e-a997-4122-8be9-f88b7f187c67","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ea23fba1-ca25-4b15-94fe-430c3aa22cf0","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6095ea2a-5234-4850-98d0-3a3618fac379","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1dc1d329-bcd2-4918-acb1-0c47f7d7f4f7","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d229a0d0-32ad-4efd-af7e-d35b6f493798","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e52c0f3d-e8c7-4a90-8f76-2bf2d914720a","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"49b68f94-72e0-4149-9219-27b6a59243b4","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b530e697-7c06-4925-9acc-6bddcff0f7c0","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d1712405-12f6-4160-a37e-6b576fdb9ebe","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a04b073e-cd86-4dc0-bc5e-482a3461a357","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"60dcf685-b10b-4a74-ba40-5f04caf18ae2","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6bbbbbd8-88e6-4e2f-9f4a-e5fb7953099f","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"f8f854e8-c123-4342-b98c-882d2d71fa9a","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5c03a2f2-16df-4fb7-a51d-e1b161c96b07","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"063b0894-f6a7-4683-99ba-7251785d2502","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"428bb4e1-a2c0-46d1-9734-ae7f8c252833","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"ee6b496b-8913-491b-9c69-335d8cdb763a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"dbce9fa1-51da-4eea-a6c4-b0f8dafbfa57","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"311e494c-e324-4239-841e-60bd3f0afad6","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"c2dfabf0-bba8-41e4-8c3d-15edfd7b50eb","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"fa79f35e-a997-4122-8be9-f88b7f187c67","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ea23fba1-ca25-4b15-94fe-430c3aa22cf0","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"6095ea2a-5234-4850-98d0-3a3618fac379","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"1dc1d329-bcd2-4918-acb1-0c47f7d7f4f7","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"d229a0d0-32ad-4efd-af7e-d35b6f493798","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"e52c0f3d-e8c7-4a90-8f76-2bf2d914720a","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"49b68f94-72e0-4149-9219-27b6a59243b4","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"b530e697-7c06-4925-9acc-6bddcff0f7c0","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"d1712405-12f6-4160-a37e-6b576fdb9ebe","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"a04b073e-cd86-4dc0-bc5e-482a3461a357","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"60dcf685-b10b-4a74-ba40-5f04caf18ae2","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"6bbbbbd8-88e6-4e2f-9f4a-e5fb7953099f","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"f8f854e8-c123-4342-b98c-882d2d71fa9a","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"5c03a2f2-16df-4fb7-a51d-e1b161c96b07","path":"sprites/spr_arcadeShooter_threeByThreePlus/spr_arcadeShooter_threeByThreePlus.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"063b0894-f6a7-4683-99ba-7251785d2502","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

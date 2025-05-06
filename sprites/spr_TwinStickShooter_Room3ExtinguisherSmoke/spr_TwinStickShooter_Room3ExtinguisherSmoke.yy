@@ -37,7 +37,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_TwinStickShooter_Room3ExtinguisherSmoke",
     "autoRecord":true,
     "backdropHeight":768,
@@ -73,24 +73,12 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f3c93890-6afe-451d-8bb6-9d8f7e4a6378","path":"sprites/spr_TwinStickShooter_Room3ExtinguisherSmoke/spr_TwinStickShooter_Room3ExtinguisherSmoke.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"168895fe-3f7b-4145-933b-a1e24e388376","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1a057527-29bc-47ab-92d6-f8039944850b","path":"sprites/spr_TwinStickShooter_Room3ExtinguisherSmoke/spr_TwinStickShooter_Room3ExtinguisherSmoke.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3b617f63-45d3-4a75-989e-6283cc12b9cc","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e99ad437-2050-40ef-8681-31b42092903f","path":"sprites/spr_TwinStickShooter_Room3ExtinguisherSmoke/spr_TwinStickShooter_Room3ExtinguisherSmoke.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b6f2770c-bacf-40a6-bdb3-b63bd9cf7837","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"131bbd3c-2be1-4380-af7f-cdb0b39b4d52","path":"sprites/spr_TwinStickShooter_Room3ExtinguisherSmoke/spr_TwinStickShooter_Room3ExtinguisherSmoke.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"bb54c517-2f46-4b36-bb99-fbf91d085c34","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3f5676ce-0ef6-4e0d-b78f-84e27205bc2d","path":"sprites/spr_TwinStickShooter_Room3ExtinguisherSmoke/spr_TwinStickShooter_Room3ExtinguisherSmoke.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c6338993-2942-4380-9d1f-e516633d6b47","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"de9e383e-0602-466e-9983-d5e501239661","path":"sprites/spr_TwinStickShooter_Room3ExtinguisherSmoke/spr_TwinStickShooter_Room3ExtinguisherSmoke.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6cb5672f-636e-449a-8f61-adb87c146321","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"f3c93890-6afe-451d-8bb6-9d8f7e4a6378","path":"sprites/spr_TwinStickShooter_Room3ExtinguisherSmoke/spr_TwinStickShooter_Room3ExtinguisherSmoke.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"168895fe-3f7b-4145-933b-a1e24e388376","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"1a057527-29bc-47ab-92d6-f8039944850b","path":"sprites/spr_TwinStickShooter_Room3ExtinguisherSmoke/spr_TwinStickShooter_Room3ExtinguisherSmoke.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3b617f63-45d3-4a75-989e-6283cc12b9cc","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"e99ad437-2050-40ef-8681-31b42092903f","path":"sprites/spr_TwinStickShooter_Room3ExtinguisherSmoke/spr_TwinStickShooter_Room3ExtinguisherSmoke.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"b6f2770c-bacf-40a6-bdb3-b63bd9cf7837","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"131bbd3c-2be1-4380-af7f-cdb0b39b4d52","path":"sprites/spr_TwinStickShooter_Room3ExtinguisherSmoke/spr_TwinStickShooter_Room3ExtinguisherSmoke.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"bb54c517-2f46-4b36-bb99-fbf91d085c34","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"3f5676ce-0ef6-4e0d-b78f-84e27205bc2d","path":"sprites/spr_TwinStickShooter_Room3ExtinguisherSmoke/spr_TwinStickShooter_Room3ExtinguisherSmoke.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"c6338993-2942-4380-9d1f-e516633d6b47","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"de9e383e-0602-466e-9983-d5e501239661","path":"sprites/spr_TwinStickShooter_Room3ExtinguisherSmoke/spr_TwinStickShooter_Room3ExtinguisherSmoke.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"6cb5672f-636e-449a-8f61-adb87c146321","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

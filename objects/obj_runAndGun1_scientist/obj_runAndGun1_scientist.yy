@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_runAndGun1_scientist1",
-    "path":"sprites/spr_runAndGun1_scientist1/spr_runAndGun1_scientist1.yy",
+    "name":"spr_runAndGun1_scientist1Shock",
+    "path":"sprites/spr_runAndGun1_scientist1Shock/spr_runAndGun1_scientist1Shock.yy",
   },
   "spriteMaskId":null,
   "visible":true,

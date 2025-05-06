@@ -39,7 +39,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_BeatEmUp_PlayerGirlAirAttack_hb",
     "autoRecord":true,
     "backdropHeight":768,
@@ -75,30 +75,14 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c4323660-39c7-4a74-93d3-46809643b534","path":"sprites/spr_BeatEmUp_PlayerGirlAirAttack_hb/spr_BeatEmUp_PlayerGirlAirAttack_hb.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e71cfe2c-359f-4e10-972d-eefdab37cfb9","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"54466673-a5ec-4e62-93e1-ac2f0d6a713d","path":"sprites/spr_BeatEmUp_PlayerGirlAirAttack_hb/spr_BeatEmUp_PlayerGirlAirAttack_hb.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ae433774-dfc3-4985-9060-f4c6bbf0b351","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dcd3f51f-cd39-4535-9bcb-ca86dc9cf454","path":"sprites/spr_BeatEmUp_PlayerGirlAirAttack_hb/spr_BeatEmUp_PlayerGirlAirAttack_hb.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fae361e5-11bf-455e-b6dc-88aaf7bc1260","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"42b6801a-939e-44a4-a532-02efcab2d8c7","path":"sprites/spr_BeatEmUp_PlayerGirlAirAttack_hb/spr_BeatEmUp_PlayerGirlAirAttack_hb.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"cd8ab460-9daf-4bc3-81cc-43b2fe0153d8","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"13590313-587b-49ad-b896-f03f7dc39a8b","path":"sprites/spr_BeatEmUp_PlayerGirlAirAttack_hb/spr_BeatEmUp_PlayerGirlAirAttack_hb.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3a6fb03f-8ddf-4330-8e82-22c79c1bfbde","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f3635c68-5ee6-4008-99e9-ac73ddfd2219","path":"sprites/spr_BeatEmUp_PlayerGirlAirAttack_hb/spr_BeatEmUp_PlayerGirlAirAttack_hb.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"cf545f15-ebc5-4f1f-ae25-c771b4e8c51f","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7117b79d-0d66-4b74-912c-ab2dece8a84b","path":"sprites/spr_BeatEmUp_PlayerGirlAirAttack_hb/spr_BeatEmUp_PlayerGirlAirAttack_hb.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"f08bfc64-028f-4cd1-bf56-b1f9bbd24deb","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ee1f6683-7b43-48ae-a111-91b9e9082acc","path":"sprites/spr_BeatEmUp_PlayerGirlAirAttack_hb/spr_BeatEmUp_PlayerGirlAirAttack_hb.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4ff2c79e-94a2-4281-9d06-2c7593f7c1f9","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"c4323660-39c7-4a74-93d3-46809643b534","path":"sprites/spr_BeatEmUp_PlayerGirlAirAttack_hb/spr_BeatEmUp_PlayerGirlAirAttack_hb.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"e71cfe2c-359f-4e10-972d-eefdab37cfb9","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"54466673-a5ec-4e62-93e1-ac2f0d6a713d","path":"sprites/spr_BeatEmUp_PlayerGirlAirAttack_hb/spr_BeatEmUp_PlayerGirlAirAttack_hb.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"ae433774-dfc3-4985-9060-f4c6bbf0b351","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"dcd3f51f-cd39-4535-9bcb-ca86dc9cf454","path":"sprites/spr_BeatEmUp_PlayerGirlAirAttack_hb/spr_BeatEmUp_PlayerGirlAirAttack_hb.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"fae361e5-11bf-455e-b6dc-88aaf7bc1260","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"42b6801a-939e-44a4-a532-02efcab2d8c7","path":"sprites/spr_BeatEmUp_PlayerGirlAirAttack_hb/spr_BeatEmUp_PlayerGirlAirAttack_hb.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"cd8ab460-9daf-4bc3-81cc-43b2fe0153d8","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"13590313-587b-49ad-b896-f03f7dc39a8b","path":"sprites/spr_BeatEmUp_PlayerGirlAirAttack_hb/spr_BeatEmUp_PlayerGirlAirAttack_hb.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3a6fb03f-8ddf-4330-8e82-22c79c1bfbde","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"f3635c68-5ee6-4008-99e9-ac73ddfd2219","path":"sprites/spr_BeatEmUp_PlayerGirlAirAttack_hb/spr_BeatEmUp_PlayerGirlAirAttack_hb.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"cf545f15-ebc5-4f1f-ae25-c771b4e8c51f","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"7117b79d-0d66-4b74-912c-ab2dece8a84b","path":"sprites/spr_BeatEmUp_PlayerGirlAirAttack_hb/spr_BeatEmUp_PlayerGirlAirAttack_hb.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"f08bfc64-028f-4cd1-bf56-b1f9bbd24deb","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ee1f6683-7b43-48ae-a111-91b9e9082acc","path":"sprites/spr_BeatEmUp_PlayerGirlAirAttack_hb/spr_BeatEmUp_PlayerGirlAirAttack_hb.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"4ff2c79e-94a2-4281-9d06-2c7593f7c1f9","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

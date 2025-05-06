@@ -11,7 +11,14 @@ if (file_exists(filePath)) {
     while (!file_text_eof(fileId)) {
         var lineString = file_text_readln(fileId);
         var columns = string_split(lineString, ",");
-
+		if (array_length(columns) > 6) {
+		    var tail = columns[5];                    // start with field 6
+		    for (var i = 6; i < array_length(columns); ++i) {
+		        tail += "," + columns[i];             // put the commas back
+		    }
+		    columns[5] = tail;                        // store rebuilt Dialogue
+		    array_resize(columns, 6);                 // discard extra slots
+		}
         var level     = real(columns[0]);
         var scene     = real(columns[1]);
         var box       = real(columns[2]);

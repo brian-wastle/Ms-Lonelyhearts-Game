@@ -38,7 +38,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_ArcadeShooter_PlayerGirlRoll",
     "autoRecord":true,
     "backdropHeight":768,
@@ -74,27 +74,13 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dbdae1c7-2f67-44d8-8659-f5de72813e97","path":"sprites/spr_ArcadeShooter_PlayerGirlRoll/spr_ArcadeShooter_PlayerGirlRoll.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"29105740-369e-40a2-9c6d-19aa3a2c815c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ac2ba1ab-080c-4237-b6fa-a9062376ad81","path":"sprites/spr_ArcadeShooter_PlayerGirlRoll/spr_ArcadeShooter_PlayerGirlRoll.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9b3f3bc5-f3b0-46c2-9887-94abfa17968e","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f7480450-9479-41c6-85ee-f903a75d78a4","path":"sprites/spr_ArcadeShooter_PlayerGirlRoll/spr_ArcadeShooter_PlayerGirlRoll.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b89f4dfe-715f-4c3d-8085-768b7c0308bb","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3601f2c1-286b-490a-9644-9bf7d3b4a0bc","path":"sprites/spr_ArcadeShooter_PlayerGirlRoll/spr_ArcadeShooter_PlayerGirlRoll.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"88c8c8c7-73e9-43ad-a5ac-e65bd85b087c","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ae68e1fe-40f9-4787-b0cb-1e601a02093f","path":"sprites/spr_ArcadeShooter_PlayerGirlRoll/spr_ArcadeShooter_PlayerGirlRoll.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"abfd90b7-aad5-4ebf-9d6e-ac640aba84d2","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"91ffffaf-84be-4f6d-90a6-22eaf1341765","path":"sprites/spr_ArcadeShooter_PlayerGirlRoll/spr_ArcadeShooter_PlayerGirlRoll.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5824b1cf-f3f8-426f-b68f-2060a20568cf","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"53bbc51d-f5f0-4187-8d05-fca3c25696ff","path":"sprites/spr_ArcadeShooter_PlayerGirlRoll/spr_ArcadeShooter_PlayerGirlRoll.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a29a5e0d-20b8-4ba6-b1ec-3147d6399f07","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"dbdae1c7-2f67-44d8-8659-f5de72813e97","path":"sprites/spr_ArcadeShooter_PlayerGirlRoll/spr_ArcadeShooter_PlayerGirlRoll.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"29105740-369e-40a2-9c6d-19aa3a2c815c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ac2ba1ab-080c-4237-b6fa-a9062376ad81","path":"sprites/spr_ArcadeShooter_PlayerGirlRoll/spr_ArcadeShooter_PlayerGirlRoll.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"9b3f3bc5-f3b0-46c2-9887-94abfa17968e","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"f7480450-9479-41c6-85ee-f903a75d78a4","path":"sprites/spr_ArcadeShooter_PlayerGirlRoll/spr_ArcadeShooter_PlayerGirlRoll.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"b89f4dfe-715f-4c3d-8085-768b7c0308bb","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"3601f2c1-286b-490a-9644-9bf7d3b4a0bc","path":"sprites/spr_ArcadeShooter_PlayerGirlRoll/spr_ArcadeShooter_PlayerGirlRoll.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"88c8c8c7-73e9-43ad-a5ac-e65bd85b087c","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ae68e1fe-40f9-4787-b0cb-1e601a02093f","path":"sprites/spr_ArcadeShooter_PlayerGirlRoll/spr_ArcadeShooter_PlayerGirlRoll.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"abfd90b7-aad5-4ebf-9d6e-ac640aba84d2","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"91ffffaf-84be-4f6d-90a6-22eaf1341765","path":"sprites/spr_ArcadeShooter_PlayerGirlRoll/spr_ArcadeShooter_PlayerGirlRoll.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"5824b1cf-f3f8-426f-b68f-2060a20568cf","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"53bbc51d-f5f0-4187-8d05-fca3c25696ff","path":"sprites/spr_ArcadeShooter_PlayerGirlRoll/spr_ArcadeShooter_PlayerGirlRoll.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"a29a5e0d-20b8-4ba6-b1ec-3147d6399f07","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

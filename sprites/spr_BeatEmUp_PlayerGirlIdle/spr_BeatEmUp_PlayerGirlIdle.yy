@@ -41,7 +41,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"spr_BeatEmUp_PlayerGirlIdle",
     "autoRecord":true,
     "backdropHeight":768,
@@ -77,36 +77,16 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"33799668-1705-4614-a7b6-21b6bf1c6674","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"01cd2955-ccc2-4a31-a2a3-71e6e322eafc","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"caa9876b-c73b-42ed-8f3f-3e27f969e905","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"8e31aba3-5691-48da-af1c-69c8da20539e","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"96aeae66-a3fc-40aa-8588-bf8ee3f4f1c4","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"2f6e4663-1609-4edc-acb8-6ec3926c7c1c","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"abfbe1eb-dabb-4648-b6b7-8371f1e440b4","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3fb7b836-2d99-491b-8e0e-0811e6df8351","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4662068b-b596-487f-9a86-cfd1795e2d70","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"32390713-8687-4f60-8ceb-b17ce5589faa","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"efbd4f56-eec6-4d80-a2a5-08df878af753","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9ece6287-7d7c-4496-8283-c5383c7b963a","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"867677b3-2b79-40fd-957b-4694f96a7017","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d6c8ac08-12b8-4a79-bcb2-27d5a76b3d20","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b8267b11-e62f-4e26-b428-18bd2edcb291","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"367b47fb-c9e5-4665-9188-b1c98177fe4c","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"63150aa2-d6aa-4de8-a330-d4bb9df41a9a","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0dbaadcd-e284-457c-b64e-0bd427f8e39a","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7773f57e-f10a-41da-b700-793bcb4fbfc0","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c65ceb27-8708-46e0-a8be-d4ce3756076c","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"33799668-1705-4614-a7b6-21b6bf1c6674","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"01cd2955-ccc2-4a31-a2a3-71e6e322eafc","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"caa9876b-c73b-42ed-8f3f-3e27f969e905","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"8e31aba3-5691-48da-af1c-69c8da20539e","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"96aeae66-a3fc-40aa-8588-bf8ee3f4f1c4","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"2f6e4663-1609-4edc-acb8-6ec3926c7c1c","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"abfbe1eb-dabb-4648-b6b7-8371f1e440b4","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3fb7b836-2d99-491b-8e0e-0811e6df8351","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"4662068b-b596-487f-9a86-cfd1795e2d70","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"32390713-8687-4f60-8ceb-b17ce5589faa","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"efbd4f56-eec6-4d80-a2a5-08df878af753","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"9ece6287-7d7c-4496-8283-c5383c7b963a","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"867677b3-2b79-40fd-957b-4694f96a7017","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"d6c8ac08-12b8-4a79-bcb2-27d5a76b3d20","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"b8267b11-e62f-4e26-b428-18bd2edcb291","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"367b47fb-c9e5-4665-9188-b1c98177fe4c","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"63150aa2-d6aa-4de8-a330-d4bb9df41a9a","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"0dbaadcd-e284-457c-b64e-0bd427f8e39a","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"7773f57e-f10a-41da-b700-793bcb4fbfc0","path":"sprites/spr_BeatEmUp_PlayerGirlIdle/spr_BeatEmUp_PlayerGirlIdle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"c65ceb27-8708-46e0-a8be-d4ce3756076c","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
