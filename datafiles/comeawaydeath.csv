@@ -13,5 +13,6 @@ Level,Scene,Box,Page,Character,Dialogue
 1,4,2,2,Boss,"-you can be the first test subject"
 1,4,2,2,Boss,"against our newest cyborg unit!"
 1,5,1,1,Boss,"Android units are {W}soooo{/W} terrestrial!"
-1,6,1,1,Boss,"{W}Lackey!{/W} Cease this quaking and"
-1,6,1,1,Boss,"initiate the start-up sequence!"
+1,6,1,1,Boss,"{W}Lackey!{/W} Cease this quaking {R}immediately{/R}"
+1,6,1,1,Boss,"and initiate the start-up sequence!"
+1,7,1,1,Boss,"and initiate the start-up sequence!"

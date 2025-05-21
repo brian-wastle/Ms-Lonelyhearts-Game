@@ -35,6 +35,13 @@ lineLength			= 0;		// pixel length of longest line in textbox
 boxSpeed			= 5;		// rate at which textbox appears and disappears
 currentXSize		= 0;		// current x size as box expands/retracts
 currentYSize		= 0;		// current y size as box expands/retracts
+enum TEXTBOX_STATE {
+    APPEAR  = 0,   // expand textbox
+    TYPE    = 1,   // typewriter effect
+    PAUSE   = 2,   // waiting for player input
+    RESIZE  = 3,   // resize between pages
+    SHRINK  = 4    // destroy textbox
+}
 
 // Textbox effects
 pointerIndex		= 0;		// image_index for pointer at corner of textbox
@@ -145,6 +152,8 @@ getLinePixelLength = function() {
 	}
 	return longestLength;
 }
+
+
 
 getPageData = function(_currentPage) {
 	var thisPage = string(_currentPage + 1);
@@ -275,3 +284,9 @@ typeDelay = getTypeDelay();
 lineLength = getLinePixelLength();
 totalWidth = lineLength + 64;
 totalHeight = (totalLines * 36) + 36;
+
+resizeProgress		= 0;            // 0‒1, driven like cx in state 0
+startW				= 0;
+startH				= 0;
+targetW				= totalWidth;
+targetH				= totalHeight;

@@ -72,13 +72,20 @@ switch (scientistState) {
 		}
 		break;
 	case 9:
-		if (currentFrame < 40) {
-		    currentFrame += frameSpeed * 2;
-		} else {
-			currentFrame += frameSpeed;
+		if (sprite_index != spr_runAndGun1_scientist1Button) {
+		    sprite_index = spr_runAndGun1_scientist1Button;
+			currentFrame = 0;
+			frameSpeed = .2;
 		}
 		
-		
+		if (currentFrame < 19) {
+		    currentFrame += frameSpeed * 2;
+		} else {
+			if (obj_runAndGun1_miniboss.enemyState != 11) {
+			    obj_runAndGun1_miniboss.enemyState = 11;
+			}
+			currentFrame += frameSpeed;
+		}
 		if (currentFrame >= image_number - 1) {
 		    instance_destroy();
 		}

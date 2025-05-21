@@ -6,7 +6,7 @@
 //11 - Take Damage
 //13 - Die
 //14 - Fall x
-if (obj_camera.cutscene == false) {
+if (obj_runAndGun_camera.cutscene == false) {
     // code here
 
 
@@ -891,6 +891,6 @@ x = round(x / 4) * 4;
 y = round(y / 4) * 4;
 
 
-} else if (obj_camera.cutscene == true) {
+} else if (obj_runAndGun_camera.cutscene == true) {
 sprite_index = spr_RunAndGun_PlayerStill;
 }

@@ -12,7 +12,6 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"beb5f00f-6d16-4234-bf9e-3fd78aa509aa","name":"beb5f00f-6d16-4234-bf9e-3fd78aa509aa","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"3c13afb3-451e-4d07-ba44-a3a24b1d8de3","name":"3c13afb3-451e-4d07-ba44-a3a24b1d8de3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"23b928a5-b9bd-4a7a-a81d-f2828b5c6493","name":"23b928a5-b9bd-4a7a-a81d-f2828b5c6493","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"6579e895-7b72-47a9-904d-8260d3c7f973","name":"6579e895-7b72-47a9-904d-8260d3c7f973","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
@@ -27,6 +26,7 @@
     {"$GMSpriteFrame":"","%Name":"3f1ddfab-2a50-4035-be73-17734cf12a88","name":"3f1ddfab-2a50-4035-be73-17734cf12a88","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"c6d13da9-be41-472b-ae57-104a220b26c2","name":"c6d13da9-be41-472b-ae57-104a220b26c2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"78cecc28-016d-42c9-8e5e-335542598fed","name":"78cecc28-016d-42c9-8e5e-335542598fed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"beb5f00f-6d16-4234-bf9e-3fd78aa509aa","name":"beb5f00f-6d16-4234-bf9e-3fd78aa509aa","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -77,26 +77,58 @@
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
+    "seqHeight":292.0,
+    "seqWidth":516.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"beb5f00f-6d16-4234-bf9e-3fd78aa509aa","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"b68b2b9b-5564-482f-8642-2f23e35f952a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"3c13afb3-451e-4d07-ba44-a3a24b1d8de3","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"51071aa0-a01a-4bcc-838b-fe9adfced8de","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"23b928a5-b9bd-4a7a-a81d-f2828b5c6493","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"ab466477-b9a8-48ce-9dae-96b0059866be","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"6579e895-7b72-47a9-904d-8260d3c7f973","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"e9627985-29bd-495f-848c-394d6bcdcc92","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"36774f63-cfa6-4080-857e-bd3bfb2d7dcc","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"be2c45cf-e562-49e8-b616-3962bd7847fc","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"2e0823a7-bb0e-466b-80c4-2d0e2fc37664","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"0c422a6d-4965-4193-82db-69fdebee566f","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"d63f60f1-e2d7-4013-a1e6-50c851714530","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"8d5773ce-dd22-4652-9733-7e7918176060","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"d5ecc194-d3af-4dcb-8d7d-0480e0ccbb24","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"4f2788e6-4a3a-4693-b271-1fe20759bcfc","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"bed21e3e-d769-4ee6-bbe2-6e045cf50c8e","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"181667fd-35d9-45c4-a2c6-344458698e5e","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"8ec2e97f-65a6-4382-bd81-3d7606930e94","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"c35f1807-0955-4172-befa-5010345a6ca7","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"2bf50786-3265-46cb-9f27-a5fabaec0330","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"9b736a07-a690-4350-8d4b-8863b2f429f7","IsCreationKey":false,"Key":10.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"dba9c0f6-58f5-479c-bac9-61a47f9ccabf","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"58a6d1df-4c8d-418c-8f64-02cee4968e79","IsCreationKey":false,"Key":11.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"3f1ddfab-2a50-4035-be73-17734cf12a88","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"8ed11ebb-3115-41f7-90f3-de7ffda20746","IsCreationKey":false,"Key":12.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"c6d13da9-be41-472b-ae57-104a220b26c2","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3ed074c9-34ec-4af0-ada7-c22032930f8a","IsCreationKey":false,"Key":13.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"78cecc28-016d-42c9-8e5e-335542598fed","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"0c0342fd-abe0-464b-9bf6-e235b1152d13","IsCreationKey":false,"Key":14.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3c13afb3-451e-4d07-ba44-a3a24b1d8de3","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"51071aa0-a01a-4bcc-838b-fe9adfced8de","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"23b928a5-b9bd-4a7a-a81d-f2828b5c6493","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ab466477-b9a8-48ce-9dae-96b0059866be","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6579e895-7b72-47a9-904d-8260d3c7f973","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e9627985-29bd-495f-848c-394d6bcdcc92","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"36774f63-cfa6-4080-857e-bd3bfb2d7dcc","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"be2c45cf-e562-49e8-b616-3962bd7847fc","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2e0823a7-bb0e-466b-80c4-2d0e2fc37664","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0c422a6d-4965-4193-82db-69fdebee566f","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d63f60f1-e2d7-4013-a1e6-50c851714530","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8d5773ce-dd22-4652-9733-7e7918176060","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d5ecc194-d3af-4dcb-8d7d-0480e0ccbb24","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4f2788e6-4a3a-4693-b271-1fe20759bcfc","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bed21e3e-d769-4ee6-bbe2-6e045cf50c8e","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"181667fd-35d9-45c4-a2c6-344458698e5e","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8ec2e97f-65a6-4382-bd81-3d7606930e94","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c35f1807-0955-4172-befa-5010345a6ca7","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2bf50786-3265-46cb-9f27-a5fabaec0330","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9b736a07-a690-4350-8d4b-8863b2f429f7","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dba9c0f6-58f5-479c-bac9-61a47f9ccabf","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"58a6d1df-4c8d-418c-8f64-02cee4968e79","IsCreationKey":false,"Key":10.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3f1ddfab-2a50-4035-be73-17734cf12a88","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8ed11ebb-3115-41f7-90f3-de7ffda20746","IsCreationKey":false,"Key":11.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c6d13da9-be41-472b-ae57-104a220b26c2","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3ed074c9-34ec-4af0-ada7-c22032930f8a","IsCreationKey":false,"Key":12.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"78cecc28-016d-42c9-8e5e-335542598fed","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0c0342fd-abe0-464b-9bf6-e235b1152d13","IsCreationKey":false,"Key":13.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"beb5f00f-6d16-4234-bf9e-3fd78aa509aa","path":"sprites/spr_runAndGun1_minibossSmash/spr_runAndGun1_minibossSmash.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b68b2b9b-5564-482f-8642-2f23e35f952a","IsCreationKey":false,"Key":14.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

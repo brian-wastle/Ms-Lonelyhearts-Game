@@ -4,7 +4,7 @@ actionstate = 0;
 directionOffset = 0;
 xOffset = 1;
 yOffset = 0;
-depth = -300;
+depth = -400;
 
 grv = 1.1; //gravity
 hsp = 0; //current horizontal speed
